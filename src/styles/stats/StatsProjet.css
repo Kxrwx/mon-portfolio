@@ -1,0 +1,41 @@
+.stats-container {
+  width: auto;
+  height: 250px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.chart-wrapper {
+  width: 100%;
+  height: 150px;
+}
+
+.legend-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+.legend-name {
+  font-weight: 600;
+  color: #1e293b; /* gris foncé */
+}
+
+.legend-value {
+  font-weight: 700;
+  color: #4f46e5; /* violet principal */
+}

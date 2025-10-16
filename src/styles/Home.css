@@ -1,0 +1,55 @@
+.home-section {
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.stat {
+  margin: 100px 70px;
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    gap: 75px;
+}
+
+
+.projets {
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  border: #211C39 solid 2px;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #F8F7FD;
+  transition: ease-in-out 0.3s;
+}
+
+.projets:hover {
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    border: #5C40D8 solid 2px;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #F8F7FD;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: ease-in-out 0.3s;
+}
+
+
+h2 {
+    align-self: flex-start;
+    margin-left: 10px;
+}
+.calendar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.scolaire {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}

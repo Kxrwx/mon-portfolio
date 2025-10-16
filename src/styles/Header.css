@@ -1,0 +1,12 @@
+.header{
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: end;
+    font-variant: small-caps;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+}
+h1 {
+    margin-right: 20px;
+}
