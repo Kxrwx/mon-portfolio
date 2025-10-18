@@ -51,6 +51,7 @@ function Certifs() {
       <div className="legend-wrapper">
         {Object.entries(certifsDetail).map(([domaine, certs], index) => (
           <div key={index} className="legend-item">
+            <span className="legend-name">Certification : {certs.length}</span>
             <span className="legend-value">
               {certs.map(c => `${c.nom} (${c.date})`).join(', ')}
             </span>

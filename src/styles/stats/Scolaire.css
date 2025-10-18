@@ -1,69 +1,70 @@
-.timeline-horizontal-container {
-  width: 100%;
-  overflow-x: auto; /* scroll si beaucoup d'écoles */
-  padding: 2rem 0;
-}
-
-.timeline-horizontal {
-  display: flex;
-  align-items: flex-end;
-  min-width: 600px; /* s'ajuste selon le nombre d'écoles */
+.timeline-container {
   position: relative;
-  border-top: 4px solid #4f46e5; /* ligne horizontale */
-  padding-top: 50px;
-  gap: 2rem; /* espace entre les écoles */
-}
-
-.timeline-item {
+  width: 100%;
+  height: 18rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #f8fafc, #f1f5f9);
+  border-radius: 1rem;
+  border: #211C39 solid 2px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
-.timeline-point {
-  width: 18px;
-  height: 18px;
-  background-color: #0ea5e9;
-  border: 3px solid #fff;
-  border-radius: 50%;
-  margin-top: 6px;
-  transition: transform 0.3s ease;
+.timeline-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #374151;
 }
 
-.timeline-item:hover .timeline-point {
-  transform: scale(1.4);
+.timeline-points {
+  position: absolute;
+  bottom: 3rem;
+  left: 5%;
+  right: 5%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.timeline-card {
-  background-color: #f8fafc;
-  padding: 0.8rem;
-  border-radius: 8px;
-  max-width: 180px;
+.timeline-point-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  margin-bottom: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.timeline-item:hover .timeline-card {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+.timeline-dot {
+  width: 20px;
+  height: 20px;
+  background-color: #5C40D8;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.4);
+  transition: transform 0.2s ease;
 }
 
-.timeline-card h3 {
-  margin: 0 0 0.2rem 0;
-  font-size: 0.95rem;
-  color: #1e293b;
+.timeline-dot:hover {
+  transform: scale(1.2);
 }
 
-.timeline-year {
-  font-size: 0.75rem;
-  color: #555;
+.timeline-school {
+  font-size: 0.9rem;
+  font-weight: 500;
+  height: 0.5rem;
+  color: #5C40D8;
+}
+
+.timeline-desc {
+  font-size: 0.8rem;
+    height: 0.5rem;
+  color: #6b7280;
   margin-bottom: 0.3rem;
 }
 
-.timeline-card p {
-  margin: 0;
-  font-size: 0.8rem;
-  color: #334155;
+.timeline-year {
+  height: 0.5rem;
+  font-size: 0.75rem;
+  color: #6b7280;
 }

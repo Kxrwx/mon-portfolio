@@ -3,7 +3,8 @@ import '../styles/Home.css'
 import StatsProjet from '../components/stats/StatsProjet'
 import LanguageCalendar from '../components/stats/LanguageCalendar'
 import Certifs from '../components/stats/Certifs'
-import Scolaire from '../components/stats/Scolaire'
+import TimelineScolaire from '../components/stats/Scolaire'
+import Interet from '../components/stats/Interet'
 
 function Home({ setActiveComponent }) {
   return (
@@ -12,19 +13,32 @@ function Home({ setActiveComponent }) {
       <p>This is the home section of my portfolio website.</p>
 
       <article className="stat">
-        <div className="projets" onClick={() => setActiveComponent('projets')}>
-          <h2>Mes projets</h2>
-          <StatsProjet />
+        <div className="container-click" onClick={() => setActiveComponent('projets')}>
+          <h2>MES PROJETS</h2>
+          <div className="box">
+            <StatsProjet />
+          </div>
+
         </div>
-        <div className="projets" onClick={() => setActiveComponent('certifs')}>
-          <h2>Certifications</h2>
+        <div className="container-click" onClick={() => setActiveComponent('certifs')}>
+          <h2>CERTIFICATIONS</h2>
+          <div className="box">
           < Certifs />
+            </div>
         </div>
-        <div className='scolaire'>
-            
-            <Scolaire />
+        <div className="container">
+          <h2>LES METIERS QUI M'INTERESSE</h2>
+          <div className="box">
+          < Interet />
+            </div>
         </div>
         
+        
+      </article>
+      <article className='scolaire-timeline'>
+      <div className='scolaire'>
+            <TimelineScolaire/>
+        </div>
       </article>
       <article className='calendar'>
         <div className="langages">

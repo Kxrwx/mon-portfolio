@@ -16,12 +16,13 @@
     height: 40px;
 }
 
-ul {
+.nav-links {
     list-style-type: none;
+    margin: 0;
     padding: 0;
     width: 100%;
 }
-li {
+.nav-links li {
     width: 100%;
     text-align: center;
     margin: 10px 0;

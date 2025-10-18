@@ -4,6 +4,7 @@
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   color: #000000;
+  
 }
 
 .chart-wrapper {
@@ -23,12 +24,10 @@
 
 .legend-item {
   display: flex;
+  flex-direction : column;
   align-items: center;
-  gap: 0.5rem;
   color: #000000;
 }
-
-
 
 .legend-name {
   font-weight: 200;
@@ -38,7 +37,6 @@
 .legend-value {
   font-weight: 200;
   color: #000000;
-
   padding: 2px 6px;
   border-radius: 4px;
 }

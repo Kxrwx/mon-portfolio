@@ -1,7 +1,7 @@
 /* Conteneur principal */
 .calendar-container {
   display: flex;               /* cartes en ligne */
-  gap: 20px;                   /* espace entre les cartes */
+  gap: 10px;                   /* espace entre les cartes */
   padding: 2rem;
   font-family: 'Montserrat', sans-serif;
   overflow-x: auto;            /* scroll horizontal si trop large */
@@ -10,8 +10,8 @@
 /* Chaque carte */
 .year-card {
   flex: 0 0 150px;             /* largeur fixe */
-  background-color: #f8fafc;
-  border: 2px solid #4f46e5;
+  background: linear-gradient(to right, #f8fafc, #f1f5f9);
+  border: 2px solid #211C39;
   border-radius: 0.8rem;
   padding: 10px;
   text-align: center;
@@ -21,6 +21,7 @@
 
 /* Hover : léger soulèvement et ombre plus forte */
 .year-card:hover {
+  border: #5C40D8 solid 2px;
   transform: translateY(-5px) scale(1.03);
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
@@ -42,6 +43,7 @@
 .year-card li {
   margin: 0.3rem 0;
   font-weight: 500;
+  padding: 10px;
   color: #1e293b;
   font-size: 0.9rem;
 }

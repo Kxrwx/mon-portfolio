@@ -7,49 +7,70 @@
   margin: 100px 70px;
   display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    justify-content: center;
     gap: 75px;
 }
 
-
-.projets {
+.container {
   display: flex;
-  width: 300px;
-  align-items: center;
-  justify-content: center;
+flex-direction: column;
   border: #211C39 solid 2px;
-  flex-direction: column;
   border-radius: 10px;
-  background-color: #F8F7FD;
+  background: linear-gradient(to right, #f8fafc, #f1f5f9);
   transition: ease-in-out 0.3s;
 }
 
-.projets:hover {
+.container-click {
+display: flex;
+flex-direction: column;
+  border: #211C39 solid 2px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #f8fafc, #f1f5f9);
+  transition: ease-in-out 0.3s;
+}
+
+.container-click:hover {
     display: flex;
-    width: 300px;
-    align-items: center;
-    justify-content: center;
-    border: #5C40D8 solid 2px;
     flex-direction: column;
+    border: #5C40D8 solid 2px;
     border-radius: 10px;
-    background-color: #F8F7FD;
+    background: linear-gradient(to right, #f8fafc, #f1f5f9);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: ease-in-out 0.3s;
+    scale: 1.01;
 }
 
-
-h2 {
-    align-self: flex-start;
-    margin-left: 10px;
+.box{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1
 }
+
+.container h2,
+.container-click h2 {
+  margin-left: 10px;
+}
+
 .calendar {
     display: flex;
+    margin-top: 100px;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
 .scolaire {
     display: flex;
-    width: 100%;
+    width: 70%;
     justify-content: center;
     align-items: center;
+}
+
+.scolaire-timeline {
+    display: flex;
+    width: 100%;
+    justify-content: center;    
+    align-items: center;
+    margin-top: 50px;
 }

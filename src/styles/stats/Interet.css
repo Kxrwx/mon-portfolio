@@ -1,0 +1,21 @@
+.interet-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.interet-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+.interet-item {
+    list-style: none;
+    display: flex;
+    margin: 20px;
+}
