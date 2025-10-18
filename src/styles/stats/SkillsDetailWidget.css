@@ -1,0 +1,17 @@
+.skills-detail-widget {
+  flex: 1;
+  padding: 20px;
+  background-color: transparent;
+}
+
+.skills-detail-widget h3 {
+  margin-bottom: 12px;
+}
+
+.skills-detail-widget ul {
+  padding-left: 20px;
+}
+
+.skills-detail-widget li {
+  margin-bottom: 6px;
+}

@@ -1,0 +1,18 @@
+.xaxis-tick {
+  fill: #000;      /* Nom des catégories en noir */
+  font-size: 16px; 
+  dy: 20px;        /* Décalage vertical sous la barre */
+}
+.yaxis-tick {
+  fill: #000;      /* Valeurs en noir */
+  font-size: 14px; 
+  dx: -10px;       /* Décalage horizontal à gauche de la barre */
+}   
+.bar {
+  fill: #5C40D8;  /* Couleur des barres */
+  transition: fill 0.3s ease;
+}
+.bar:hover {
+  fill: #7B61E6;  /* Couleur des barres au survol */
+}
+

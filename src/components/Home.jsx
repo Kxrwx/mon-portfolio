@@ -5,13 +5,14 @@ import LanguageCalendar from '../components/stats/LanguageCalendar'
 import Certifs from '../components/stats/Certifs'
 import TimelineScolaire from '../components/stats/Scolaire'
 import Interet from '../components/stats/Interet'
+import DashboardSkills from '../components/stats/DashboardSkills'
 
 function Home({ setActiveComponent }) {
   return (
     <section id="home" className="home-section">
       <h1>Welcome to My Portfolio</h1>
       <p>This is the home section of my portfolio website.</p>
-
+      <div className='stat-placement'>
       <article className="stat">
         <div className="container-click" onClick={() => setActiveComponent('projets')}>
           <h2>MES PROJETS</h2>
@@ -32,14 +33,29 @@ function Home({ setActiveComponent }) {
           < Interet />
             </div>
         </div>
-        
+        <div className="container-skills">
+          <h2>LES METIERS QUI M'INTERESSE</h2>
+          <div className="box"> 
+            < DashboardSkills />
+            </div>
+        </div>
+        <div className="container">
+          <h2>LES METIERS QUI M'INTERESSE</h2>
+          <div className="box">
+          < Interet />
+            </div>
+        </div>
         
       </article>
+      </div>
       <article className='scolaire-timeline'>
       <div className='scolaire'>
             <TimelineScolaire/>
         </div>
       </article>
+
+    
+      
       <article className='calendar'>
         <div className="langages">
           <h2>Langages appris au fil des années</h2>
