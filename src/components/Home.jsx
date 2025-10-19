@@ -6,6 +6,7 @@ import Certifs from '../components/stats/Certifs'
 import TimelineScolaire from '../components/stats/Scolaire'
 import Interet from '../components/stats/Interet'
 import DashboardSkills from '../components/stats/DashboardSkills'
+import ExperienceWidget from '../components/stats/ExperienceWidget'
 
 function Home({ setActiveComponent }) {
   return (
@@ -42,9 +43,10 @@ function Home({ setActiveComponent }) {
         <div className="container">
           <h2>LES METIERS QUI M'INTERESSE</h2>
           <div className="box">
-          < Interet />
+          < ExperienceWidget />
             </div>
         </div>
+        
         
       </article>
       </div>

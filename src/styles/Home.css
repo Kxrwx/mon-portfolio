@@ -45,6 +45,7 @@ flex-direction: column;
     background: linear-gradient(to right, #f8fafc, #f1f5f9);
     transition: ease-in-out 0.3s;
     width: 620px;
+    max-width: 750px;
     }
 
 .container-click {
@@ -78,7 +79,8 @@ flex-direction: column;
 }
 
 .container h2,
-.container-click h2 {
+.container-click h2,
+.container-skills h2 {
   margin-left: 10px;
 }
 

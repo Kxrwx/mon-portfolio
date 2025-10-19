@@ -9,19 +9,19 @@ const data = [
     category: "FrontEnd",
     technologies: 6,
     color: "#6366F1",
-    details: ["HTML", "CSS", "JS", "React", "Tailwind", "Next.js"],
+    details: ["Framework : React, Next.js", "Langages : CSS, HTML, JS , TS", "Outils: Vite", "Librairie : Zod, Axios, Recharts, Motion", "UI/UX : Figma", "CMS : WordPress"],
   },
   {
     category: "BackEnd",
     technologies: 4,
     color: "#10B981",
-    details: ["Node.js", "Express", "MongoDB", "MySQL"],
+    details: ["Framework : Flask, Next.js", "Langages : Python, PHP, Java", "Base de données : PostgreSQL, MySQL", "DB Layers : Prisma"],
   },
   {
     category: "Réseau",
-    technologies: 3,
+    technologies: 2,
     color: "#F59E0B",
-    details: ["TCP/IP", "Cisco", "Wireshark"],
+    details: ["Outils/Commandes : ping, traceroute, ipconfig", "Protocoles : TCP/IP, HTTP/HTTPS", "Architecture & Topologies : LAN, WAN, VLAN, routing, switching"],
   },
 ];
 
