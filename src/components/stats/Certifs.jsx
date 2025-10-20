@@ -2,12 +2,10 @@ import React from 'react'
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts'
 import '../../styles/stats/Certifs.css'
 
-// Données : nombre de certificats par domaine
 const data = [
   { name: 'Certifs', value: 3 }
 ]
 
-// Certificats détaillés avec dates
 const certifsDetail = {
   Certifs: [
     { nom: 'React', date: '2023-05' },
@@ -16,15 +14,19 @@ const certifsDetail = {
   ]
 }
 
-// Couleurs pour les domaines
-const COLORS = ['#4f46e5'] // violet, bleu
-
 function Certifs() {
   return (
     <div className="stats-container">
       <div className="chart-wrapper">
         <ResponsiveContainer>
           <PieChart>
+            <defs>
+              <linearGradient id="gradCertifs" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#4f46e5" stopOpacity={1}/>
+                <stop offset="100%" stopColor="#a78bfa" stopOpacity={1}/>
+              </linearGradient>
+            </defs>
+
             <Pie
               data={data}
               cx="50%"
@@ -40,7 +42,7 @@ function Certifs() {
               {data.map((entry, index) => (
                 <Cell
                   key={`cell-${index}`}
-                  fill={COLORS[index % COLORS.length]}
+                  fill="url(#gradCertifs)" // ← utilise le gradient
                 />
               ))}
             </Pie>

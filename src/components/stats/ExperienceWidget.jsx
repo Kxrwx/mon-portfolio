@@ -1,37 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import "../../styles/stats/ExperienceWidget.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { 
-  faReact, 
-  faJs, 
-  faHtml5, 
-  faCss3Alt, 
-} from "@fortawesome/free-brands-svg-icons";
-import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-const technologies = [
-  { name: "React", icon: faReact, color: "text-blue-500", img: "/images/react.png" },
-  { name: "JavaScript", icon: faJs, color: "text-yellow-400", img: "/images/js.png" },
-  { name: "HTML", icon: faHtml5, color: "text-red-500", img: "/images/html.png" },
-  { name: "CSS", icon: faCss3Alt, color: "text-blue-600", img: "/images/css.png" },
+const experiences = [
+  {
+    title: "Stage Développeur PowerPlatform",
+    company: "FehrGroup",
+    date: "Juin - Aout 2025",
+    desc: "Création d’applications métiers PowerApps et d’un intranet SharePoint avec automatisations PowerAutomate.",
+  },
+  {
+    title: "Mon stage 2026 ",
+    company: "None",
+    date: "Janvier - Fevrier 2026",
+    desc: "En attente de description.",
+  },
 ];
 
 const ExperienceWidget = () => {
+  const [index, setIndex] = useState(0);
+
+  // Navigation manuelle uniquement
+  const next = () => setIndex((prev) => (prev + 1) % experiences.length);
+  const prev = () => setIndex((prev) => (prev - 1 + experiences.length) % experiences.length);
+
   return (
-    <div className="w-full max-w-[600px] min-w-[300px] bg-white rounded-xl shadow-md p-4 mx-auto">
-      <h3 className="text-lg font-bold mb-3 text-center">Technologies vues durant mon stage</h3>
-      <div className="grid grid-cols-2 gap-4">
-        {technologies.map((tech, index) => (
-          <div 
-            key={index} 
-            className="flex flex-col items-center p-2 bg-gray-50 rounded-lg shadow-sm"
+    <div className="experience-widget">
+
+      <div className="experience-carousel">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3 }}
+            className="experience-card"
           >
-            {/* Image si tu as une image pour la techno */}
-            <img src={tech.img} alt={tech.name} className="w-12 h-12 mb-2" />
-            {/* Icône FontAwesome */}
-            <FontAwesomeIcon icon={tech.icon} className={`text-2xl ${tech.color} mb-1`} />
-            <span className="text-xs font-semibold text-center">{tech.name}</span>
-          </div>
-        ))}
+            <h4 className="experience-role">{experiences[index].title}</h4>
+            <p className="experience-company">{experiences[index].company}</p>
+            <p className="experience-date">{experiences[index].date}</p>
+            <p className="experience-desc">{experiences[index].desc}</p>
+          </motion.div>
+        </AnimatePresence>
+      </div>
+
+      <div className="experience-controls">
+        <button onClick={prev}><FontAwesomeIcon icon={faArrowLeft}></FontAwesomeIcon></button>
+        <button onClick={next}><FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon></button>
       </div>
     </div>
   );

@@ -7,6 +7,8 @@ import TimelineScolaire from '../components/stats/Scolaire'
 import Interet from '../components/stats/Interet'
 import DashboardSkills from '../components/stats/DashboardSkills'
 import ExperienceWidget from '../components/stats/ExperienceWidget'
+import ToolsWidget from '../components/stats/ToolsWidget'
+import VeilleWidget from '../components/stats/VeilleWidget'
 
 function Home({ setActiveComponent }) {
   return (
@@ -35,19 +37,23 @@ function Home({ setActiveComponent }) {
             </div>
         </div>
         <div className="container-skills">
-          <h2>LES METIERS QUI M'INTERESSE</h2>
+          <h2>MES COMPETENCES</h2>
           <div className="box"> 
             < DashboardSkills />
             </div>
         </div>
         <div className="container">
-          <h2>LES METIERS QUI M'INTERESSE</h2>
-          <div className="box">
+          <h2>MES EXPERIENCES PROFESSIONNELS </h2>
           < ExperienceWidget />
-            </div>
         </div>
-        
-        
+         <div className="container-outils">
+          <h2>OUTILS & ENVIRONNEMENTS</h2>
+          < ToolsWidget />
+        </div>
+        <div className="container-outils">
+          <h2>MES EXPERIENCES PROFESSIONNELS </h2>
+          < VeilleWidget />
+        </div>
       </article>
       </div>
       <article className='scolaire-timeline'>

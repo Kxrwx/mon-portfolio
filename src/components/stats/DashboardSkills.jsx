@@ -9,7 +9,7 @@ const data = [
     category: "FrontEnd",
     technologies: 6,
     color: "#6366F1",
-    details: ["Framework : React, Next.js", "Langages : CSS, HTML, JS , TS", "Outils: Vite", "Librairie : Zod, Axios, Recharts, Motion", "UI/UX : Figma", "CMS : WordPress"],
+    details: ["Framework : React, Next.js", "Langages : CSS, HTML, JS , TS", "Outils: Vite", "Librairies : Zod, Axios, Recharts, Motion", "UI/UX : Figma", "CMS : WordPress"],
   },
   {
     category: "BackEnd",

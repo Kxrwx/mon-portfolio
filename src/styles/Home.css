@@ -36,6 +36,7 @@ flex-direction: column;
   border-radius: 10px;
   background: linear-gradient(to right, #f8fafc, #f1f5f9);
   transition: ease-in-out 0.3s;
+  overflow: hidden;
 }
 .container-skills {
     flex: 1 1 600px;
@@ -46,6 +47,18 @@ flex-direction: column;
     transition: ease-in-out 0.3s;
     width: 620px;
     max-width: 750px;
+    }
+.container-outils {
+    flex: 1 1 3500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: #211C39 solid 2px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #f8fafc, #f1f5f9);
+    transition: ease-in-out 0.3s;
+    width: 350px;
+    max-width: 350px;
     }
 
 .container-click {
@@ -80,7 +93,8 @@ flex-direction: column;
 
 .container h2,
 .container-click h2,
-.container-skills h2 {
+.container-skills h2, 
+.container-outils h2 {
   margin-left: 10px;
 }
 
