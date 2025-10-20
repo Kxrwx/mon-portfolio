@@ -58,11 +58,10 @@
     transition: 0.5s ease;
 }
 
-button:hover {
+.sidebar button:hover {
     background-color: #5C40D8;
     font-family: 'Montserrat', sans-serif;
     color: #FFFFFF;
-    border: none;
     font-size: 16px;
     cursor: pointer;
     padding: 8px 0;

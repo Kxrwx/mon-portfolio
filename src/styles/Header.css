@@ -2,11 +2,63 @@
     background-color: #f4f4f4;
     padding: 10px;
     text-align: end;
-    font-variant: small-caps;
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
     background-color: transparent;
 }
-h1 {
+
+.container-contact {
+    position: relative;
+    top: 0;
+    left: 50%;
+    display: flex;
+    height: 100px;
+    transform: translate(-50%, -64%);
+    align-items: flex-end;
+    justify-content: space-evenly;
+    background-color: #211C39;
+    width: 400px;
+    padding: 20px;       
+  clip-path: polygon(
+    15% 0%,    /* haut-gauche */
+    85% 0%,    /* haut-droit */
+    100% 50%,  /* milieu-droit */
+    85% 100%,  /* bas-droit */
+    15% 100%,  /* bas-gauche */
+    0% 50%     /* milieu-gauche */
+  );
+}
+
+.container-contact button {
+    height: 40px;
+    font-size: 18px;
+    border-radius: 10px;
+    aspect-ratio: 1 / 1 ;
+    transform: translateY(25%);
+    background-color: #F8F7FD;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    border: #1B162C solid 2px;
+    transition: 0.5s ease;
+}
+
+.container-contact button:hover{
+    height: 40px;
+    font-size: 18px;
+    border-radius: 10px;
+    aspect-ratio: 1 / 1 ;
+    transform: translateY(25%);
+    background-color: #5C40D8;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: #FFFFFF solid 2px;
+    transition: 0.5s ease;
+}
+
+.header h1 {
+    position: relative;
+    font-variant: small-caps;
+    top: -50px;
     margin-right: 20px;
 }

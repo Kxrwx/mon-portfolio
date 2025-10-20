@@ -14,7 +14,7 @@ function Sidebar({ setActiveComponent }) {
           </button>
         </li>
         <li>
-          <button onClick={() => setActiveComponent('moi')}>
+          <button onClick={() => setActiveComponent('me')}>
             <FontAwesomeIcon icon={faAddressCard}/>
           </button>
         </li>

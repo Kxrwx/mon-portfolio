@@ -17,14 +17,14 @@ function Home({ setActiveComponent }) {
       <p>This is the home section of my portfolio website.</p>
       <div className='stat-placement'>
       <article className="stat">
-        <div className="container-click" onClick={() => setActiveComponent('projets')}>
+        <div className="container-click" onClick={() => setActiveComponent('projet')}>
           <h2>MES PROJETS</h2>
           <div className="box">
             <StatsProjet />
           </div>
 
         </div>
-        <div className="container-click" onClick={() => setActiveComponent('certifs')}>
+        <div className="container-click" onClick={() => setActiveComponent('projet')}>
           <h2>CERTIFICATIONS</h2>
           <div className="box">
           < Certifs />
@@ -42,7 +42,7 @@ function Home({ setActiveComponent }) {
             < DashboardSkills />
             </div>
         </div>
-        <div className="container-veille">
+        <div className="container-veille" onClick={() => setActiveComponent('veille')}>
           <h2>VEILLE TECHNO</h2>
           < VeilleWidget />
         </div>
