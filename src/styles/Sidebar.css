@@ -1,16 +1,30 @@
+.container-sidebar {
+    width: 130px;
+    position: absolute;
+}
+
 .sidebar {
     background-color: #333;
-    height: 100vh;
-    width: 250px;
+    height: 400px;
+    transform: translate(-50%, -50%);
     position: fixed;
-    top: 0;
+    padding: 50px 0;
+    top: 50%;
     left: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    background-color: #FFFFFF;
-    border-right: #000000 solid 2px;
+    justify-content: center;
+    background-color: #211C39;
+    width: 120px;       /* largeur */
+  aspect-ratio: 1.1547; /* hauteur / largeur pour hexagone régulier */
+  clip-path: polygon(
+    50% 0%,     /* sommet haut */
+    100% 15%,  /* haut-droit */
+    100% 85%,  /* bas-droit */
+    50% 100%,   /* sommet bas */
+    50% 0%,   /* bas-gauche */
+    0% 50%    /* haut-gauche */
+  );
 }
 .space {
     height: 40px;
@@ -20,39 +34,39 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    margin-left: 25%;
     width: 100%;
 }
 .nav-links li {
     width: 100%;
     text-align: center;
-    margin: 10px 0;
     padding: 20px 0;
 }
 
-button {
-    background-color: #F0EEFB;
+.sidebar button {
+    background-color: #F8F7FD;
     font-family: 'Montserrat', sans-serif;
     border: none;
     color: #000000;
+    aspect-ratio: 1 / 1;
+    width: 40px;
     font-size: 16px;
     cursor: pointer;
-    width: 150px;
     padding: 8px 0;
     border-radius: 10px;
     border: #1B162C solid 2px;
-    transition: background-color 0.3s ease;
+    transition: 0.5s ease;
 }
 
 button:hover {
     background-color: #5C40D8;
     font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
     border: none;
-    color: #000000;
     font-size: 16px;
     cursor: pointer;
-    width: 150px;
     padding: 8px 0;
     border-radius: 10px;
-    border: #1B162C solid 2px;
-    transition: background-color 0.3s ease;
+    border: #FFFFFF solid 2px;
+    transition: 0.5s ease;
 }

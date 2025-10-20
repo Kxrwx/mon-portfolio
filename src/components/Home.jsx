@@ -42,18 +42,20 @@ function Home({ setActiveComponent }) {
             < DashboardSkills />
             </div>
         </div>
-        <div className="container">
-          <h2>MES EXPERIENCES PROFESSIONNELS </h2>
-          < ExperienceWidget />
+        <div className="container-veille">
+          <h2>VEILLE TECHNO</h2>
+          < VeilleWidget />
         </div>
          <div className="container-outils">
           <h2>OUTILS & ENVIRONNEMENTS</h2>
           < ToolsWidget />
         </div>
-        <div className="container-outils">
+        <div className="container">
           <h2>MES EXPERIENCES PROFESSIONNELS </h2>
-          < VeilleWidget />
+          < ExperienceWidget />
         </div>
+        
+        
       </article>
       </div>
       <article className='scolaire-timeline'>

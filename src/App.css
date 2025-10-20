@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(135deg, #F8F7FD, #F0EEFB);
+  overflow: hidden;
 
 }
 .App {
@@ -13,8 +14,8 @@ body {
 }
 
 .main-content {
-  margin-left: 250px; /* Width of the sidebar */
-  width: calc(100% - 250px);
+  margin-left: 130px; /* Width of the sidebar */
+  width: calc(100% - 130px);
   height: 100vh;
   overflow-y: auto;
 }

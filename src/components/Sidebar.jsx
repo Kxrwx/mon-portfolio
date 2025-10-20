@@ -1,23 +1,38 @@
 import React from 'react'
 import '../styles/Sidebar.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHouse, faAddressCard, faCertificate, faMicrochip } from '@fortawesome/free-solid-svg-icons'
 
 function Sidebar({ setActiveComponent }) {
   return (
+    <div className='.container-sidebar'>
     <nav className="sidebar">
-      <div className='space'></div>
       <ul className="nav-links">
         <li>
           <button onClick={() => setActiveComponent('home')}>
-            Home
+            <FontAwesomeIcon icon={faHouse}/>
           </button>
         </li>
         <li>
-          <button onClick={() => setActiveComponent('experiences')}>
-            Mes experiences
+          <button onClick={() => setActiveComponent('moi')}>
+            <FontAwesomeIcon icon={faAddressCard}/>
           </button>
         </li>
+        <li>
+          <button onClick={() => setActiveComponent('projet')}>
+            <FontAwesomeIcon icon={faCertificate}/>
+          </button>
+        </li>
+        <li>
+          <button onClick={() => setActiveComponent('veille')}>
+            <FontAwesomeIcon icon={faMicrochip}/>
+          </button>
+        </li>
+          
+        
       </ul>
     </nav>
+    </div>
   )
 }
 

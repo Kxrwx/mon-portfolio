@@ -83,6 +83,31 @@ flex-direction: column;
     scale: 1.01;
 }
 
+.container-veille {
+  flex: 1 1 300px;
+min-width: 300px;
+max-width: 500px; 
+flex-direction: column;
+  border: #211C39 solid 2px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #f8fafc, #f1f5f9);
+  transition: ease-in-out 0.3s;
+}
+
+.container-veille:hover {
+      flex: 1 1 300px;
+    width: 300px;
+    flex-direction: column;
+    border: #5C40D8 solid 2px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #f8fafc, #f1f5f9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: ease-in-out 0.3s;
+    scale: 1.01;
+}
+
+
+
 .box{
   display: flex;
     flex-direction: column;
@@ -94,7 +119,8 @@ flex-direction: column;
 .container h2,
 .container-click h2,
 .container-skills h2, 
-.container-outils h2 {
+.container-outils h2,
+.container-veille h2 {
   margin-left: 10px;
 }
 
