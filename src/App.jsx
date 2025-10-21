@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 import './App.css'
 import Sidebar from './components/Sidebar'
+import Header from './components/Header'
 import Home from './components/Home'
 import PageMe from './components/PageMe'
 import PageProjet from './components/PageProjet'
+import PageCertif from './components/PageCertif'
 import PageVeille from './components/PageVeille'
-import Header from './components/Header'
+
+
 
 function App() {
   const [activeComponent, setActiveComponent] = useState('home')
@@ -19,6 +22,7 @@ function App() {
         {activeComponent === 'home' && <Home setActiveComponent={setActiveComponent} />}
         {activeComponent === 'me' && <PageMe setActiveComponent={setActiveComponent}/>}
         {activeComponent === 'projet' && <PageProjet setActiveComponent={setActiveComponent}/>}
+        {activeComponent === 'certif' && <PageCertif setActiveComponent={setActiveComponent}/>}
         {activeComponent === 'veille' && <PageVeille setActiveComponent={setActiveComponent}/>}
       </div>
     </div>

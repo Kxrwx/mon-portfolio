@@ -13,8 +13,8 @@ import VeilleWidget from '../components/stats/VeilleWidget'
 function Home({ setActiveComponent }) {
   return (
     <section id="home" className="home-section">
-      <h1>Welcome to My Portfolio</h1>
-      <p>This is the home section of my portfolio website.</p>
+      <h1>Bienvenu sur mon Portfolio</h1>
+      <p>Je suis IFFLAND Maxime et voici mon dashboard !</p>
       <div className='stat-placement'>
       <article className="stat">
         <div className="container-click" onClick={() => setActiveComponent('projet')}>
@@ -24,7 +24,7 @@ function Home({ setActiveComponent }) {
           </div>
 
         </div>
-        <div className="container-click" onClick={() => setActiveComponent('projet')}>
+        <div className="container-click" onClick={() => setActiveComponent('certif')}>
           <h2>CERTIFICATIONS</h2>
           <div className="box">
           < Certifs />

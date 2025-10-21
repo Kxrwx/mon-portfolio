@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/Sidebar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse, faAddressCard, faCertificate, faMicrochip } from '@fortawesome/free-solid-svg-icons'
+import { faHouse, faAddressCard, faCertificate, faFolderOpen, faMicrochip } from '@fortawesome/free-solid-svg-icons'
 
 function Sidebar({ setActiveComponent }) {
   return (
@@ -20,6 +20,11 @@ function Sidebar({ setActiveComponent }) {
         </li>
         <li>
           <button onClick={() => setActiveComponent('projet')}>
+            <FontAwesomeIcon icon={faFolderOpen}/>
+          </button>
+        </li>
+        <li>
+          <button onClick={() => setActiveComponent('certif')}>
             <FontAwesomeIcon icon={faCertificate}/>
           </button>
         </li>

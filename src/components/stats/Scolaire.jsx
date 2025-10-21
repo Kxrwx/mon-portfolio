@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";   
 import { ResponsiveContainer, LineChart, Line } from "recharts";
 import '../../styles/stats/Scolaire.css'
-import {faSchool} from "@fortawesome/free-solid-svg-icons";
+import {faUserGraduate} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
@@ -15,7 +15,7 @@ const data = [
 export default function TimelineScolaire() {
   return (
     <div className="timeline-container">
-      <h2 className="timeline-title"><FontAwesomeIcon icon={faSchool}/>  Mon parcours scolaire</h2>
+      <h2 className="timeline-title"><FontAwesomeIcon icon={faUserGraduate}/>  Mon parcours scolaire</h2>
 
       <ResponsiveContainer width="90%" height={100}>
         <LineChart data={data}>
