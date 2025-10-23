@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faReact,
@@ -27,40 +27,10 @@ const widgets = [
 ];
 
 const BandeauCertifs = () => {
-  const [itemsPerView, setItemsPerView] = useState(4);
-  const [startIndex, setStartIndex] = useState(0);
-
-  // Adapter le nombre de widgets visibles selon la largeur
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 500) setItemsPerView(2);
-      else if (window.innerWidth < 768) setItemsPerView(3);
-      else setItemsPerView(4);
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  // Défilement toutes les 10 secondes
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setStartIndex((prev) =>
-        prev + itemsPerView >= widgets.length ? 0 : prev + itemsPerView
-      );
-    }, 10000);
-    return () => clearInterval(interval);
-  }, [itemsPerView]);
-
-  // Crée le bloc visible
-  const visibleWidgets = widgets
-    .concat(widgets) // pour boucle infinie
-    .slice(startIndex, startIndex + itemsPerView);
-
   return (
     <div className="bandeau-container">
-      <div className="bandeau-row">
-        {visibleWidgets.map((item, i) => (
+      <div className="bandeau-scroll">
+        {[...widgets, ...widgets].map((item, i) => (
           <div key={i} className="bandeau-widget">
             <FontAwesomeIcon icon={item.icon} className="bandeau-icon" />
             <h3>{item.name}</h3>

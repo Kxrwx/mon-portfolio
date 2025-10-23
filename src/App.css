@@ -13,8 +13,8 @@ body {
 }
 
 .main-content {
-  margin-left: 130px; /* Width of the sidebar */
-  width: calc(100% - 130px);
+  margin-left: 70px; /* Width of the sidebar */
+  width: calc(100% - 70px);
   height: 100vh;
   overflow-y: auto;
 

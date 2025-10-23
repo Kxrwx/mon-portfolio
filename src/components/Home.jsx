@@ -3,7 +3,6 @@ import '../styles/Home.css'
 import StatsProjet from '../components/stats/StatsProjet'
 import LanguageCalendar from '../components/stats/LanguageCalendar'
 import Certifs from '../components/stats/Certifs'
-import TimelineScolaire from '../components/stats/Scolaire'
 import Interet from '../components/stats/Interet'
 import DashboardSkills from '../components/stats/DashboardSkills'
 import ExperienceWidget from '../components/stats/ExperienceWidget'
@@ -13,8 +12,8 @@ import VeilleWidget from '../components/stats/VeilleWidget'
 function Home({ setActiveComponent }) {
   return (
     <section id="home" className="home-section">
-      <h1>Bienvenu sur mon Portfolio</h1>
-      <p>Je suis IFFLAND Maxime et voici mon dashboard !</p>
+      <h1 className='home-section-title'>Bienvenu sur mon Portfolio</h1>
+      <p className='home-section-title'>Je suis IFFLAND Maxime et voici mon dashboard !</p>
       <div className='stat-placement'>
       <article className="stat">
         <div className="container-click" onClick={() => setActiveComponent('projet')}>
@@ -58,11 +57,6 @@ function Home({ setActiveComponent }) {
         
       </article>
       </div>
-      <article className='scolaire-timeline'>
-      <div className='scolaire'>
-            <TimelineScolaire/>
-        </div>
-      </article>
 
     
       

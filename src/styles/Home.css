@@ -1,5 +1,10 @@
 .home-section {
-  padding: 0 10px;
+  padding: 0 10px 0 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.home-section-title{
+  margin-left: 80px;
   font-family: 'Montserrat', sans-serif;
 }
 .stat-placement {
@@ -14,7 +19,7 @@
 .stat {
 display: flex;
   flex-wrap: wrap; 
-  padding: 10px;
+  padding: 50px 10px;
   gap: 12px;
   justify-content:space-between;       /* Permet de passer à la ligne suivante */
   width: 80%;          /* Espacement entre les widgets */
