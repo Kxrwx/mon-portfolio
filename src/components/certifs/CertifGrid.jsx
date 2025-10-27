@@ -8,6 +8,7 @@ import {
   faJs,
   faFigma,
 } from "@fortawesome/free-brands-svg-icons";
+import { motion } from "framer-motion";
 import "../../styles/certifs/CertifGrid.css";
 
 const certifs = [
@@ -49,7 +50,7 @@ const certifs = [
   },
 ];
 
-export default function CertifGrid () {
+export default function CertifGrid() {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleDescription = (index) => {
@@ -61,7 +62,18 @@ export default function CertifGrid () {
       {certifs.map((certif, index) => {
         const isActive = activeIndex === index;
         return (
-          <div key={index} className="certif-card">
+          <motion.div
+            key={index}
+            className="certif-card"
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.2 }}
+            transition={{
+              duration: 0.2,
+              delay: index * 0.05,
+              ease: "easeOut",
+            }}
+          >
             {!isActive ? (
               <>
                 <FontAwesomeIcon icon={certif.icon} className="certif-icon" />
@@ -85,9 +97,9 @@ export default function CertifGrid () {
                 </button>
               </>
             )}
-          </div>
+          </motion.div>
         );
       })}
     </div>
   );
-};
+}
