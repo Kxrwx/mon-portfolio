@@ -20,7 +20,7 @@
 display: flex;
   flex-wrap: wrap; 
   padding: 50px 10px;
-  gap: 12px;
+  gap: 17px;
   justify-content:space-between;       /* Permet de passer à la ligne suivante */
   width: 80%;          /* Espacement entre les widgets */
   overflow: hidden;
