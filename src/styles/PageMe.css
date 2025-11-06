@@ -2,3 +2,21 @@
   padding: 0 10px;
   font-family: 'Montserrat', sans-serif;
 }
+.me-space {
+  display: flex;
+  height: 75px;
+}
+.me-placement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  width: 100%;
+  height: 100%; /* ou min-height selon besoin */
+  box-sizing: border-box;
+}
+.me-title {
+    margin-left: 80px;
+    font-family: 'Montserrat', sans-serif;
+}

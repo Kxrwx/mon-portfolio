@@ -133,6 +133,7 @@ flex-direction: column;
 }
 
 .container h2,
+.container-stage h2,
 .container-click h2,
 .container-skills h2, 
 .container-outils h2,

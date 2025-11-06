@@ -1,0 +1,11 @@
+.widget-comp {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.widget-comp h2 {
+    align-self: flex-start;
+    margin-left: 80px;
+}

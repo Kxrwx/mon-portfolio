@@ -1,0 +1,11 @@
+.widget-front {
+    justify-self: center;
+    flex: 1 1 600px;
+    flex-direction: column;
+    border: #211C39 solid 2px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #f8fafc, #f1f5f9);
+    transition: ease-in-out 0.3s;
+    width: 80%;
+    padding: 40px;
+}
