@@ -16,6 +16,10 @@ function Home({ setActiveComponent }) {
       <p className='home-section-title'>Je suis IFFLAND Maxime et voici mon dashboard !</p>
       <div className='stat-placement'>
       <article className="stat">
+        <div className="container-stage">
+          <h2>MES EXPERIENCES PROFESSIONNELS </h2>
+          < ExperienceWidget />
+        </div>
         <div className="container-click" onClick={() => setActiveComponent('projet')}>
           <h2>MES PROJETS</h2>
           <div className="box">
@@ -49,10 +53,7 @@ function Home({ setActiveComponent }) {
           <h2>OUTILS & ENVIRONNEMENTS</h2>
           < ToolsWidget />
         </div>
-        <div className="container">
-          <h2>MES EXPERIENCES PROFESSIONNELS </h2>
-          < ExperienceWidget />
-        </div>
+        
         
         
       </article>
