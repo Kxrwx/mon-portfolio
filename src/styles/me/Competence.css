@@ -1,11 +1,59 @@
-.widget-comp {
+.container-comp {
     display: flex;
     flex-direction: column;
     width: 100%;
 
 }
 
-.widget-comp h2 {
+.container-comp h2 {
     align-self: flex-start;
     margin-left: 80px;
+}
+
+
+.widget-container-comp {
+    padding: 40px;
+    display: flex;
+    width: 80%;
+    justify-self: center;
+    align-self : center; 
+    align-items: center;
+    flex-direction: column;
+    border: #211C39 solid 2px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #f8fafc, #f1f5f9);
+}
+
+.widget-container-button-comp {
+    width: 300px;
+    padding: 50px;
+    display: flex;
+    justify-self: center;
+    justify-content: space-around;
+
+}
+
+.widget-container-button-comp button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border : 2px solid #5C40D8;
+    color: #5C40D8;
+    transition: transform 0.3s ease;
+    background: linear-gradient(to right, #f8fafc, #f1f5f9);
+}
+
+.widget-container-button-comp button:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border : 2px solid #6366f1;
+    background: linear-gradient(to right, #f8fafc, #f1f5f9);
+    transform: scale(1.05);
+    transition:  0.3s ease;
+    color: #6366f1; 
 }
