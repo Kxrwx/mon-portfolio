@@ -3,7 +3,7 @@ import '../styles/PageCertif.css'
 import BandeauCertifs from '../components/certifs/BandeauCertifs'
 import CertifGrid from '../components/certifs/CertifGrid'
 
-function PageCertif({ setActiveComponent }) {
+function PageCertif({ }) {
   return (
     <section id="certif" className="certif-section">
       <h1 className="certif-section-title">Voici mes certifications</h1>

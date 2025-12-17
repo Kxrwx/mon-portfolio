@@ -1,26 +1,219 @@
+
+
 .widget-front {
     display: flex;
-    flex-direction: column;
-    align-items: center;    
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: stretch;
     width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
-
-.widget-front h4 {
-    align-self: flex-start  ;
-}
-
-.front-langages-container {
+.title-front {
     width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.widget-front > div:not(.builder-cms, .title-front) {
+    flex: 1 1 300px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 25px;
+    transition: 0.3s ease-in-out;
+    justify-content: flex-start;
 }
 
-.front-langages-container ul {
-    list-style: none;
-    align-self: flex-start;
+.builder-cms {
+    flex: 1 1 300px;
+    
+    border: none;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    transition: none; 
+    
+    transform: none;
+
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 30px;
+}
+
+.widget-front > div:not(.builder-cms, .title-front):hover, 
+.builder:hover,
+.cms:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.01); 
+    transition: 0.3s ease-in-out;
+    border: 1px solid #7B61FF;
+
+}
+
+
+.widget-front > div p, 
+.widget-front > div h3 {
+    text-align: start;
+}
+
+
+.widget-front > div h3 {
     margin: 0;
-    padding: 0 0 30px 0;
+    margin-bottom: 20px;
+    color: #000;
+}
+.widget-front > div:not(.builder-cms) h2 {
+    margin: 0;
+    margin-bottom: 50px;
+    color: #000;
 }
 
-.front-langages-container ul li {
-    word-spacing: 10em;
-    padding: 10px;
+.builder-cms h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.widget-front h2 {
+    color: #000;
+    font-size: 22px;
+}
+
+.builder,
+.cms {
+    max-height: 150px;
+    flex: 1; 
+    width: clamp(300px, 600px, 700px);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 25px; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.builder h2, .cms h2 {
+    text-align: center; 
+    margin-bottom: 10px;
+}
+
+.builder div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.builder img.logo-vite {
+    width: 50px;
+    height: auto;
+    margin: 0;
+}
+
+.builder p, 
+.cms p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0;
+    text-align: start;
+}
+
+.langage-front, .cms{
+    background: linear-gradient(135deg, #F8F9FF 0%, #F2F4FF 50%, #E9EEFF 100%);
+    border: 1px solid #E6E4F5;
+
+}
+
+.librairy-react, .builder, .framework-front {
+    background: linear-gradient(135deg, #F8F7FD 0%, #F4F3FC 50%, #F0EEFB 100%);
+    border: 1px solid #E2E0F2;
+
+}
+
+.langage-front ul,
+.librairy-react ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.langage-front ul li,
+.librairy-react ul li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.langage-front ul li > svg,
+.librairy-react ul li > svg {
+    font-size: 1.5rem;
+    color: var(--clr-dark);
+    min-width: 30px;
+    text-align: center;
+}
+
+.langage-front h3,
+.librairy-react h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--clr-dark);
+}
+
+.langage-front p,
+.librairy-react p {
+    margin: 5px 0 0 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.framework-front ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.framework-front ul li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: #000 solid 1px;
+    border-radius: 10px;
+    color: #555;
+    padding: 20px;
+}
+
+.framework-front img {
+    width: 60px;
+    height: auto;
+    object-fit: contain;
+    min-width: 60px;
+}
+
+
+/* --- Media Query (Adaptation Mobile) --- */
+
+@media (max-width: 768px) {
+    .widget-front {
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .widget-front > div {
+        flex: 1 1 100%; 
+    }
+
+    .builder-cms {
+        flex-direction: column;
+        gap: 15px;
+    }
 }

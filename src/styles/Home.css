@@ -64,6 +64,20 @@ flex-direction: column;
     width: 620px;
     max-width: 750px;
     }
+
+    .container-skills:hover {
+    flex: 1 1 600px;
+    flex-direction: column;
+    width: 620px;
+    max-width: 750px;
+    border: #5C40D8 solid 2px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #f8fafc, #f1f5f9);
+    transition: ease-in-out 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    scale: 1.01;
+}
+    
 .container-outils {
     flex: 1 1 3500px;
     flex-direction: column;

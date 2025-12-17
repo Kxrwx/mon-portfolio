@@ -6,7 +6,6 @@
 }
 
 .container-comp h2 {
-    align-self: flex-start;
     margin-left: 80px;
 }
 
@@ -25,11 +24,11 @@
 }
 
 .widget-container-button-comp {
-    width: 300px;
+    width: 400px;
     padding: 50px;
     display: flex;
     justify-self: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
 }
 
@@ -37,10 +36,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 20px;
+    width: 120px;
+    padding: 0 10px;
     border-radius: 10px;
     border : 2px solid #5C40D8;
     color: #5C40D8;
+    word-spacing: 3px;
     transition: transform 0.3s ease;
     background: linear-gradient(to right, #f8fafc, #f1f5f9);
 }
@@ -49,8 +50,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0 10px;
+    width: 120px;
     border-radius: 10px;
+    word-spacing: 3px;
     border : 2px solid #6366f1;
     background: linear-gradient(to right, #f8fafc, #f1f5f9);
     transform: scale(1.05);

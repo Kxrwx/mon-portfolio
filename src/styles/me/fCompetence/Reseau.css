@@ -1,0 +1,95 @@
+
+
+.widget-reseau {
+    display: flex;
+    flex-direction: column; /* Les cartes s'empilent */
+    gap: 40px; /* Espace entre les cartes */
+    
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Titre principal (H1) */
+.widget-reseau h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #000;
+}
+
+/* Ajoutez ceci en haut pour vous assurer que toutes les propriétés animées ont une transition */
+.widget-reseau * {
+    transition: 0.3s ease-in-out;
+}
+
+
+.reseau-theorie,
+.reseau-commandes,
+.reseau-protocoles,
+.reseau-architecture {
+    flex: 1 1 100%; 
+    
+    /* Styles de carte visuelle */
+    border-radius: 10px;
+    padding: 25px;
+    /* La transition est gérée par le sélecteur global ou par :hover */
+    box-shadow: none; 
+    cursor: default;
+    
+    /* Dégradé et bordure initiaux */
+    background: linear-gradient(135deg, #F8F7FD 0%, #F4F3FC 50%, #F0EEFB 100%);
+    border: 1px solid #E2E0F2;
+}
+
+/* --- RÈGLE D'ANIMATION CORRIGÉE pour Réseau --- */
+
+.reseau-theorie:hover,
+.reseau-commandes:hover,
+.reseau-protocoles:hover,
+.reseau-architecture:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    transform: scale(1.01); /* Correction: Utilise le même scale que le Front-End */
+    transition: 0.3s ease-in-out; /* Assure la fluidité */
+    border: 1px solid #7B61FF; /* Bordure colorée au survol */
+}
+
+/* ... Reste du CSS Réseau reste inchangé ... */
+
+/* --- Titres & Textes dans les Cartes --- */
+
+/* Titres de carte (h2) */
+.reseau-theorie h2,
+.reseau-commandes h2,
+.reseau-protocoles h2,
+.reseau-architecture h2 {
+    color: #000;
+    font-size: 22px;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: start; 
+}
+
+/* Paragraphes (p) */
+.reseau-theorie p,
+.reseau-commandes p,
+.reseau-protocoles p,
+.reseau-architecture p,
+.reseau-commande-list p,
+.reseau-archi-container p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
+    text-align: start;
+}
+
+/* --- Media Query (Adaptation Mobile) --- */
+
+@media (max-width: 768px) {
+    .widget-reseau {
+        padding: 15px;
+        gap: 15px;
+    }
+}

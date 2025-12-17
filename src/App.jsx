@@ -12,18 +12,18 @@ import PageVeille from './components/PageVeille'
 
 function App() {
   const [activeComponent, setActiveComponent] = useState('home')
-
+  const [activeSection, setActiveSection] = useState(null)
   return (
     <div className="App">
       <Sidebar setActiveComponent={setActiveComponent} />
 
       <div className="main-content">
         <Header/>
-        {activeComponent === 'home' && <Home setActiveComponent={setActiveComponent} />}
-        {activeComponent === 'me' && <PageMe setActiveComponent={setActiveComponent}/>}
-        {activeComponent === 'projet' && <PageProjet setActiveComponent={setActiveComponent}/>}
-        {activeComponent === 'certif' && <PageCertif setActiveComponent={setActiveComponent}/>}
-        {activeComponent === 'veille' && <PageVeille setActiveComponent={setActiveComponent}/>}
+        {activeComponent === 'home' && <Home setActiveComponent={setActiveComponent} setActiveSection={setActiveSection}/>}
+        {activeComponent === 'me' && <PageMe  activeSection={activeSection}/>}
+        {activeComponent === 'projet' && <PageProjet />}
+        {activeComponent === 'certif' && <PageCertif  />}
+        {activeComponent === 'veille' && <PageVeille  />}
       </div>
     </div>
   )

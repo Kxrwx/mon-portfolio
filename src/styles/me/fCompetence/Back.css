@@ -1,7 +1,175 @@
+
+/* Le conteneur principal du widget */
 .widget-back {
     display: flex;
-    flex-direction: column;
-    align-items: center;    
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Titre principal et description (prennent toute la largeur) */
+.widget-back h1,
+.back-desc {
     width: 100%;
 }
 
+.widget-back h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #000;
+}
+.back-desc {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.back-desc p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* --- Styles des Cartes Back-End --- */
+
+/* Applique les styles de carte Flexbox/visuels à tous les conteneurs de cartes */
+.back-langages-container,
+.back-framework-container,
+.back-dblayer-container {
+    flex: 1 1 300px; 
+    text-align: center;
+    border-radius: 10px;
+    padding: 25px;
+    transition: 0.3s ease-in-out;
+    justify-content: flex-start; /* Aligne le contenu au début */
+}
+
+.back-db-container {
+    width: clamp(200px, 400px, 700px);
+    text-align: center;
+    border-radius: 10px;
+    padding: 25px;
+    transition: 0.3s ease-in-out;
+    justify-content: flex-start;
+}
+
+/* Dégradé & Bordure : Uniformisation des styles visuels */
+.back-langages-container, 
+.back-db-container {
+    background: linear-gradient(135deg, #F8F9FF 0%, #F2F4FF 50%, #E9EEFF 100%);
+    border: 1px solid #E6E4F5;
+}
+
+.back-framework-container, 
+.back-dblayer-container {
+    background: linear-gradient(135deg, #F8F7FD 0%, #F4F3FC 50%, #F0EEFB 100%);
+    border: 1px solid #E2E0F2;
+}
+
+/* Effet de survol : Appliqué à toutes les cartes (similaire au sélecteur du Front-End) */
+.back-langages-container:hover, 
+.back-db-container:hover,
+.back-framework-container:hover,
+.back-dblayer-container:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.01); 
+    transition: 0.3s ease-in-out;
+    border: 1px solid #7B61FF; /* Couleur de survol */
+}
+
+/* --- Titres & Textes dans les Cartes --- */
+
+/* Titres de carte (h2) */
+.back-langages-container h2,
+.back-db-container h2,
+.back-framework-container h2,
+.back-dblayer-container h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 22px;
+}
+
+/* Sous-titres (h3) */
+.back-framework-container h3 {
+    text-align: start; /* Aligné à gauche dans le contexte de la description */
+    margin: 0;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+/* Paragraphes (p) */
+.back-framework-container p,
+.back-dblayer-container p {
+    margin: 5px 0 0 0;
+    font-size: 1rem;
+    color: #555;
+    text-align: start;
+    line-height: 1.5;
+}
+
+/* --- Listes (Langages & DB) --- */
+
+.back-langages-container ul,
+.back-db-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Mise en forme verticale (comme .langage-front ul) */
+    gap: 15px;
+}
+
+.back-langages-container ul li,
+.back-db-container ul li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.back-langages-container ul li > svg,
+.back-db-container ul li > svg {
+    font-size: 1.5rem;
+    color: #000;
+    min-width: 30px;
+    text-align: center;
+}
+
+/* --- Frameworks (Structure interne pour descriptions empilées) --- */
+.back-framework-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.back-framework-container > div {
+    /* Conteneur pour Next.js et Flask */
+    padding: 20px;
+    border: #000 solid 1px;
+    border-radius: 10px;
+}
+
+
+
+/* --- Media Query (Adaptation Mobile) --- */
+
+@media (max-width: 768px) {
+    .widget-back {
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    /* Toutes les cartes de niveau 1 prennent toute la largeur */
+    .back-langages-container,
+    .back-db-container,
+    .back-framework-container,
+    .back-dblayer-container {
+        flex: 1 1 100%; 
+    }
+}

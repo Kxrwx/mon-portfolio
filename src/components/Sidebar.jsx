@@ -3,7 +3,7 @@ import '../styles/Sidebar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse, faAddressCard, faCertificate, faFolderOpen, faMicrochip } from '@fortawesome/free-solid-svg-icons'
 
-function Sidebar({ setActiveComponent }) {
+function Sidebar({ setActiveComponent, setActiveSection }) {
   return (
     <div className='.container-sidebar'>
     <nav className="sidebar">
@@ -14,7 +14,7 @@ function Sidebar({ setActiveComponent }) {
           </button>
         </li>
         <li>
-          <button onClick={() => setActiveComponent('me')}>
+          <button onClick={() => {setActiveComponent('me'); setActiveSection(null);}}>
             <FontAwesomeIcon icon={faAddressCard}/>
           </button>
         </li>

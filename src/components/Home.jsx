@@ -9,7 +9,7 @@ import ExperienceWidget from '../components/stats/ExperienceWidget'
 import ToolsWidget from '../components/stats/ToolsWidget'
 import VeilleWidget from '../components/stats/VeilleWidget'
 
-function Home({ setActiveComponent }) {
+function Home({ setActiveComponent, setActiveSection}) {
   return (
     <section id="home" className="home-section">
       <h1 className='home-section-title'>Bienvenu sur mon Portfolio</h1>
@@ -39,7 +39,10 @@ function Home({ setActiveComponent }) {
           < Interet />
             </div>
         </div>
-        <div className="container-skills">
+        <div className="container-skills" onClick={() => {
+            setActiveSection('skills');   
+            setActiveComponent('me');     
+        }}>
           <h2>MES COMPETENCES</h2>
           <div className="box"> 
             < DashboardSkills />
