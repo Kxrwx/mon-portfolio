@@ -154,7 +154,7 @@
 .langage-front ul li > svg,
 .librairy-react ul li > svg {
     font-size: 1.5rem;
-    color: var(--clr-dark);
+    color: #000;
     min-width: 30px;
     text-align: center;
 }
@@ -163,7 +163,7 @@
 .librairy-react h3 {
     margin: 0;
     font-size: 1.1rem;
-    color: var(--clr-dark);
+    color: #000;
 }
 
 .langage-front p,
@@ -186,7 +186,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    border: #000 solid 1px;
+    border: #E6E4F5 solid 1px;
     border-radius: 10px;
     color: #555;
     padding: 20px;

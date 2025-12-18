@@ -21,6 +21,7 @@
     border: #211C39 solid 2px;
     border-radius: 10px;
     background: linear-gradient(to right, #f8fafc, #f1f5f9);
+    margin-bottom: 100px;
 }
 
 .widget-container-button-comp {
