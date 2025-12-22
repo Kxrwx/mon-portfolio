@@ -12,7 +12,7 @@ import VeilleWidget from '../components/stats/VeilleWidget'
 function Home({ setActiveComponent, setActiveSection}) {
   return (
     <section id="home" className="home-section">
-      <h1 className='home-section-title'>Bienvenu sur mon Portfolio</h1>
+      <h1 className='home-section-title'>BIENVENU SUR MON PORTFOLIO</h1>
       <p className='home-section-title'>Je suis IFFLAND Maxime et voici mon dashboard !</p>
       <div className='stat-placement'>
       <article className="stat">

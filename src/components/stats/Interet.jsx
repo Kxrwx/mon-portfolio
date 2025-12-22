@@ -20,15 +20,10 @@ export default function Interet() {
           <motion.li
             key={item.name}
             className="interet-item"
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{
-              delay: index * 0.2,
-              duration: 0.5,
-              type: "spring",
-            }}
-            whileHover={{ scale: 1.1, color: "#6366f1" }}
-          >
+    animate={{ opacity: 1, x: 0, color: "#333333" }} 
+    style={{ color: "#333333" }} 
+    whileHover={{ scale: 1.1, color: "#6366f1" }} 
+>
             <FontAwesomeIcon icon={item.icon} style={{ marginRight: "8px" }} />
             {item.name}
           </motion.li>

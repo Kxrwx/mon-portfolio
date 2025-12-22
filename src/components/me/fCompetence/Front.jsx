@@ -4,9 +4,9 @@ import { color, motion } from "framer-motion"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHtml5, faReact, faCss3, faJs, faFontAwesome} from '@fortawesome/free-brands-svg-icons'
 import { faCode, faBrush, faTable, faChartPie } from '@fortawesome/free-solid-svg-icons'
-import ViteLogo from '../../../../public/vite-logo.svg'
-import NextLogo from '../../../../public/nextjs-logo.svg'
-import ReactLogo from '../../../../public/react-logo.svg'
+import ViteLogo from '../../../assets/vite-logo.svg'
+import NextLogo from '../../../assets/nextjs-logo.svg'
+import ReactLogo from '../../../assets/react-logo.svg'
 import { faArrowUpLong } from '@fortawesome/free-solid-svg-icons'
 
 

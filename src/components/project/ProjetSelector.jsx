@@ -5,7 +5,6 @@ import "../../styles/project/ProjectSelector.css";
 export default function ProjetSelector({ projects = [], onSelect }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // 🔁 Appel automatique du projet au centre
   useEffect(() => {
     if (projects.length > 0 && onSelect) {
       onSelect(projects[currentIndex]);

@@ -6,7 +6,7 @@ import CertifGrid from '../components/certifs/CertifGrid'
 function PageCertif({ }) {
   return (
     <section id="certif" className="certif-section">
-      <h1 className="certif-section-title">Voici mes certifications</h1>
+      <h1 className="certif-section-title">VOICI MES CERTIFICATIONS</h1>
 
       <article className="certif-placement">
         <BandeauCertifs />

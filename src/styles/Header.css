@@ -29,6 +29,7 @@
 
 .container-contact button {
     height: 40px;
+    text-align: center;
     font-size: 18px;
     border-radius: 10px;
     aspect-ratio: 1 / 1 ;

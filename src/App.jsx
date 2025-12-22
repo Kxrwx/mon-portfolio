@@ -15,7 +15,7 @@ function App() {
   const [activeSection, setActiveSection] = useState(null)
   return (
     <div className="App">
-      <Sidebar setActiveComponent={setActiveComponent} />
+      <Sidebar setActiveComponent={setActiveComponent} setActiveSection={setActiveSection} />
 
       <div className="main-content">
         <Header/>
