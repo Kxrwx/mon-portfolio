@@ -1,0 +1,84 @@
+.source-static-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.source-static-main > div {
+    width : clamp(300px, 60%, 800px);
+    background: linear-gradient(to right, #f8fafc, #f1f5f9);
+    padding: 20px;
+    border: 2px solid #4f46e5;
+    border-radius: 10px;
+}
+.source-static-main > div > h2 {
+    background-image: linear-gradient(
+        90deg,             
+        #818cf8,           
+        #4f46e5 50%,      
+        #3730a3            
+    );
+    color: transparent;
+    -webkit-background-clip: text; 
+    background-clip: text; 
+}
+ 
+
+.source-static-main > div > ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.source-static-main > div > ul > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.source-static-main > div > ul > li > a {
+    text-decoration: none;
+    padding: 15px;
+    border: 1px solid #666666;
+    margin: 15px 0;
+    width: 80%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+}
+
+.source-static-main > div > ul > li > a:hover {
+    transform: scale(1.02); 
+    background-color: #FFFFFF; 
+    border-color: #4f46e5;
+}
+
+.source-static-main > div > ul > li > a > div{
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    gap: 10px;
+}
+
+.source-static-main > div > ul > li > a > div > h3{
+    margin: 0;
+    color : #4f46e5;
+}
+
+.source-static-main > div > ul > li > a > div > p{
+    color : #666666;
+    font-size : 13px;
+    margin: 0;
+}
+

@@ -1,0 +1,27 @@
+.veille-content-main {
+    width: 100%;
+}
+
+.veille-content-main-title {
+    justify-self: center;
+    align-self: center;
+    background-image: linear-gradient(
+        90deg,             
+        #818cf8,           
+        #4f46e5 50%,      
+        #3730a3            
+    );
+    color: transparent;
+    -webkit-background-clip: text; 
+    background-clip: text;        
+    font-size: 50px; 
+    font-weight: 800;
+}
+.veille-content-main > p {
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 18px;
+    line-height: 1.6;
+}

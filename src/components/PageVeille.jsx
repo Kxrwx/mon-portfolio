@@ -1,12 +1,14 @@
 import React from 'react'
 import '../styles/PageVeille.css'
+import DeepFace from './veilles/DeepFace'
 
-function PageVeille({ setActiveComponent, setActiveSection }) {
+export default function PageVeille({ setActiveComponent, setActiveSection }) {
   return (
     <section id="veille" className="veille-section">
-        <h1>La Page Veille Techno</h1>
+        <h1 className='veille-section-title'>VEILLE TECHNOLOGIQUE</h1>
+        <article className="veille-placement">
+          <DeepFace/>
+        </article>
     </section>
   )
 }
-
-export default PageVeille

@@ -74,7 +74,6 @@ function PageProjet() {
             <h1 className="certif-section-title">MES PROJETS</h1>
             
             <article className="projet-placement">
-                {/* ⬅️ 3. Passer la nouvelle fonction stable */}
                 <ProjetSelector projects={projets} onSelect={handleProjectSelect} />
             </article>
             <article className="projet-placement">{renderProjectComponent()}</article>
