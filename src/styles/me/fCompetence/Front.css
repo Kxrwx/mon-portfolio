@@ -3,23 +3,23 @@
 .widget-front {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 2.78vw;
     justify-content: center;
     align-items: stretch;
     width: 100%;
-    max-width: 1400px;
+    max-width: 97.22vw;
     margin: 0 auto;
 }
 .title-front {
     width: 100%;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 .widget-front > div:not(.builder-cms, .title-front) {
-    flex: 1 1 300px;
+    flex: 1 1 20.83vw;
     text-align: center;
     border-radius: 10px;
-    padding: 25px;
+    padding: 1.74vw;
     transition: 0.3s ease-in-out;
     justify-content: flex-start;
 }
@@ -60,12 +60,12 @@
 
 .widget-front > div h3 {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     color: #000;
 }
 .widget-front > div:not(.builder-cms) h2 {
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 3.47vw;
     color: #000;
 }
 
@@ -77,22 +77,22 @@
 
 .widget-front h2 {
     color: #000;
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
 .builder,
 .cms {
-    max-height: 150px;
+    max-height: 10.42vw;
     flex: 1; 
-    width: clamp(300px, 600px, 700px);
+    width: clamp(18.75rem, 41.67vw, 48.61vw);
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    padding: 25px; 
+    padding: 1.74vw; 
     text-align: center;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
     transition: 0.3s ease-in-out;
 }
 
@@ -104,11 +104,11 @@
 .builder div {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 0.9375rem;
 }
 
 .builder img.logo-vite {
-    width: 50px;
+    width: 3.125rem;
     height: auto;
     margin: 0;
 }
@@ -140,7 +140,7 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 0.9375rem;
 }
 
 .langage-front ul li,
@@ -148,14 +148,14 @@
     display: flex;
     align-items: flex-start;
     gap: 15px;
-    padding: 10px 0;
+    padding: 0.625rem 0;
 }
 
 .langage-front ul li > svg,
 .librairy-react ul li > svg {
     font-size: 1.5rem;
     color: #000;
-    min-width: 30px;
+    min-width: 1.875rem;
     text-align: center;
 }
 
@@ -179,24 +179,24 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2.78vw;
 }
 
 .framework-front ul li {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
     border: #E6E4F5 solid 1px;
     border-radius: 10px;
     color: #555;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .framework-front img {
-    width: 60px;
+    width: 3.75rem;
     height: auto;
     object-fit: contain;
-    min-width: 60px;
+    min-width: 3.75rem;
 }
 
 
@@ -204,8 +204,8 @@
 
 @media (max-width: 768px) {
     .widget-front {
-        padding: 15px;
-        gap: 15px;
+        padding: 0.9375rem;
+        gap: 0.9375rem;
     }
     
     .widget-front > div {

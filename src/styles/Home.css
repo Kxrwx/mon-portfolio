@@ -1,17 +1,17 @@
 .home-section {
-  padding: 0 10px 0 40px;
+  padding: 0 0.625rem 0 2.5rem;
   font-family: 'Montserrat', sans-serif;
 }
 
 .home-section-title{
-  margin-left: 80px;
+  margin-left: 5.56vw;
   font-family: 'Montserrat', sans-serif;
 }
 .stat-placement {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   width: 100%;
   height: 100%; /* ou min-height selon besoin */
   box-sizing: border-box;
@@ -19,8 +19,8 @@
 .stat {
 display: flex;
   flex-wrap: wrap; 
-  padding: 50px 10px;
-  gap: 17px;
+  padding: 3.47vw 0.625rem;
+  gap: 1.06rem;
   justify-content:space-between;       /* Permet de passer à la ligne suivante */
   width: 80%;          /* Espacement entre les widgets */
   overflow: hidden;
@@ -34,8 +34,8 @@ display: flex;
 }
 
 .container {
-  flex: 1 1 300px;
-  min-width: 300px; 
+  flex: 1 1 20.83vw;
+  min-width: 20.83vw; 
 flex-direction: column;
   border: #211C39 solid 2px;
   border-radius: 10px;
@@ -45,8 +45,8 @@ flex-direction: column;
 }
 
 .container-stage {
-  flex: 1 1 300px;
-  min-width: 700px; 
+  flex: 1 1 20.83vw;
+  min-width: 48.61vw; 
 flex-direction: column;
   border: #211C39 solid 2px;
   border-radius: 10px;
@@ -55,21 +55,21 @@ flex-direction: column;
   overflow: hidden;
 }
 .container-skills {
-    flex: 1 1 600px;
+    flex: 1 1 41.67vw;
     flex-direction: column;
     border: #211C39 solid 2px;
     border-radius: 10px;
     background: linear-gradient(to right, #f8fafc, #f1f5f9);
     transition: ease-in-out 0.3s;
-    width: 620px;
-    max-width: 750px;
+    width: 43.06vw;
+    max-width: 52.08vw;
     }
 
     .container-skills:hover {
-    flex: 1 1 600px;
+    flex: 1 1 41.67vw;
     flex-direction: column;
-    width: 620px;
-    max-width: 750px;
+    width: 43.06vw;
+    max-width: 52.08vw;
     border: #5C40D8 solid 2px;
     border-radius: 10px;
     background: linear-gradient(to right, #f8fafc, #f1f5f9);
@@ -79,7 +79,7 @@ flex-direction: column;
 }
     
 .container-outils {
-    flex: 1 1 3500px;
+    flex: 1 1 243.06vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -87,13 +87,13 @@ flex-direction: column;
     border-radius: 10px;
     background: linear-gradient(to right, #f8fafc, #f1f5f9);
     transition: ease-in-out 0.3s;
-    width: 350px;
-    max-width: 350px;
+    width: 24.31vw;
+    max-width: 24.31vw;
     }
 
 .container-click {
-flex: 1 1 300px;
-min-width: 300px; 
+flex: 1 1 20.83vw;
+min-width: 20.83vw; 
 flex-direction: column;
   border: #211C39 solid 2px;
   border-radius: 10px;
@@ -102,8 +102,8 @@ flex-direction: column;
 }
 
 .container-click:hover {
-    flex: 1 1 300px;
-    width: 300px;
+    flex: 1 1 20.83vw;
+    width: 20.83vw;
     flex-direction: column;
     border: #5C40D8 solid 2px;
     border-radius: 10px;
@@ -126,7 +126,7 @@ flex-direction: column;
 
 .container-veille:hover {
       flex: 1 1 300px;
-    width: 300px;
+    width: 20.83vw;
     flex-direction: column;
     border: #5C40D8 solid 2px;
     border-radius: 10px;
@@ -152,12 +152,12 @@ flex-direction: column;
 .container-skills h2, 
 .container-outils h2,
 .container-veille h2 {
-  margin-left: 10px;
+  margin-left: 0.625rem;
 }
 
 .calendar {
     display: flex;
-    margin-top: 100px;
+    margin-top: 6.94vw;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -174,5 +174,5 @@ flex-direction: column;
     width: 100%;
     justify-content: center;    
     align-items: center;
-    margin-top: 50px;
+    margin-top: 3.47vw;
 }

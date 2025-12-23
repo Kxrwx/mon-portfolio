@@ -1,21 +1,21 @@
 .container-sidebar {
-    width: 120px;
+    width: 8.33vw;
     position: absolute;
 }
 
 .sidebar {
     background-color: #333;
-    height: 450px;
+    height: 31.25vw;
     transform: translate(-50%, -50%);
     position: fixed;
-    padding: 50px 0;
+    padding: 3.47vw 0;
     top: 50%;
     left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #211C39;
-    width: 120px;       /* largeur */
+    width: 8.33vw;       /* largeur */
   aspect-ratio: 1.1547; /* hauteur / largeur pour hexagone régulier */
   clip-path: polygon(
     50% 0%,     /* sommet haut */
@@ -27,7 +27,7 @@
   );
 }
 .space {
-    height: 40px;
+    height: 2.5rem;
 }
 
 .nav-links {
@@ -40,7 +40,7 @@
 .nav-links li {
     width: 100%;
     text-align: center;
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
 
 .sidebar button {
@@ -49,10 +49,10 @@
     border: none;
     color: #000000;
     aspect-ratio: 1 / 1;
-    width: 40px;
-    font-size: 16px;
+    width: 2.5rem;
+    font-size: 1rem;
     cursor: pointer;
-    padding: 8px 0;
+    padding: 0.5rem 0;
     border-radius: 10px;
     border: #1B162C solid 2px;
     transition: 0.5s ease;
@@ -62,9 +62,9 @@
     background-color: #5C40D8;
     font-family: 'Montserrat', sans-serif;
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
-    padding: 8px 0;
+    padding: 0.5rem 0;
     border-radius: 10px;
     border: #FFFFFF solid 2px;
     transition: 0.5s ease;

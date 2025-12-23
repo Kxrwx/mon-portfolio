@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: 40px 0;
+  padding: 2.78vw 0;
 }
 
 .carousel {
@@ -15,16 +15,16 @@
   justify-content: center;
   position: relative;
   width: 100%;
-  height: 280px; /* hauteur fixe pour toutes les cartes */
-  perspective: 1000px; /* effet léger de profondeur */
+  height: 19.44vw; /* hauteur responsive pour les cartes */
+  perspective: 69.44vw; /* effet léger de profondeur (responsive) */
 }
 
 .carousel-card {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 180px;
-  height: 220px;
+  width: 12.5vw;
+  height: 15.28vw;
   background: linear-gradient(to right, #f8fafc, #f1f5f9);
   border: 2px solid #4f46e5;
   border-radius: 12px;
@@ -45,13 +45,13 @@
 }
 
 .carousel-card.card-left {
-  transform: translateY(-50%) translateX(-220px) scale(0.9);
+  transform: translateY(-50%) translateX(-15.28vw) scale(0.9);
   opacity: 0.8;
   z-index: 2;
 }
 
 .carousel-card.card-right {
-  transform: translateY(-50%) translateX(220px) scale(0.9);
+  transform: translateY(-50%) translateX(15.28vw) scale(0.9);
   opacity: 0.8;
   z-index: 2;
 }
@@ -64,7 +64,7 @@
 
 .project-icon {
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .carousel-btn {
@@ -73,8 +73,8 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 8px;
   border: none;
   background-color: #4f46e5;

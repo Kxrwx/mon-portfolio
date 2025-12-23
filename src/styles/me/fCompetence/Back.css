@@ -3,11 +3,11 @@
 .widget-back {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 2.78vw;
     justify-content: center;
     align-items: stretch;
     width: 100%;
-    max-width: 1400px;
+    max-width: 97.22vw;
     margin: 0 auto;
 }
 
@@ -19,13 +19,13 @@
 
 .widget-back h1 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     font-size: 2rem;
     color: #000;
 }
 .back-desc {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 .back-desc p {
     font-size: 1rem;
@@ -39,19 +39,19 @@
 .back-langages-container,
 .back-framework-container,
 .back-dblayer-container {
-    flex: 1 1 300px; 
+    flex: 1 1 20.83vw; 
     text-align: center;
     border-radius: 10px;
-    padding: 25px;
+    padding: 1.74vw;
     transition: 0.3s ease-in-out;
     justify-content: flex-start; /* Aligne le contenu au début */
 }
 
 .back-db-container {
-    width: clamp(200px, 400px, 700px);
+    width: clamp(12.5rem, 27.78vw, 48.61vw);
     text-align: center;
     border-radius: 10px;
-    padding: 25px;
+    padding: 1.74vw;
     transition: 0.3s ease-in-out;
     justify-content: flex-start;
 }
@@ -88,9 +88,9 @@
 .back-framework-container h2,
 .back-dblayer-container h2 {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     color: #000;
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
 /* Sous-titres (h3) */
@@ -120,14 +120,14 @@
     margin: 0;
     display: flex;
     flex-direction: column; /* Mise en forme verticale (comme .langage-front ul) */
-    gap: 15px;
+    gap: 0.9375rem;
 }
 
 .back-langages-container ul li,
 .back-db-container ul li {
     display: flex;
     align-items: flex-start;
-    gap: 15px;
+    gap: 0.9375rem;
     padding: 10px 0;
     font-size: 1.1rem;
     color: #333;
@@ -145,12 +145,12 @@
 .back-framework-container {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 2.08vw;
 }
 
 .back-framework-container > div {
     /* Conteneur pour Next.js et Flask */
-    padding: 20px;
+    padding: 1.25rem;
     border: #E6E4F5 solid 1px;
     border-radius: 10px;
 }
@@ -161,8 +161,8 @@
 
 @media (max-width: 768px) {
     .widget-back {
-        padding: 15px;
-        gap: 15px;
+        padding: 0.9375rem;
+            gap: 0.9375rem;
     }
     
     /* Toutes les cartes de niveau 1 prennent toute la largeur */

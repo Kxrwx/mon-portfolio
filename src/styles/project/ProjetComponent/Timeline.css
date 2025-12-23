@@ -1,28 +1,28 @@
 /* Conteneur principal */
 .timeline-vertical-container {
-    padding: 30px 20px;
-    max-width: 800px;
-    margin: 40px auto;
+    padding: 2.08vw 1.39vw;
+    max-width: 55.56vw;
+    margin: 2.78vw auto;
 }
 
 .timeline-vertical-container h3 {
     text-align: center;
-    font-size: 25px;
-    margin-bottom: 40px;
+    font-size: 1.5625rem;
+    margin-bottom: 2.78vw;
     color: #333;
 }
 
 
 .timeline-list-vertical {
     position: relative;
-    padding-left: 35px; 
+    padding-left: 2.43vw; 
 }
 
 .timeline-list-vertical::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 25px; 
+    left: 1.74vw; 
     width: 4px;
     height: 110%;
     background: #4f46e5; 
@@ -30,7 +30,7 @@
 
 .timeline-milestone-vertical {
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 2.78vw;
     position: relative;
 }
 
@@ -45,15 +45,15 @@
 
 
 .milestone-icon {
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     position: relative;
     color: #4f46e5;
     top: 50%;
-    right: 15px;
+    right: 0.9375rem;
     transform: translateX(-50%);
     background-color: #ffffff; 
-    padding: 10px;
+    padding: 0.625rem;
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
@@ -62,10 +62,10 @@
 .milestone-content-vertical {
     background: linear-gradient(to right, #f8fafc, #f1f5f9);
     border: 1px solid #4f46e5;
-    padding: 15px;
+    padding: 0.9375rem;
     border-radius: 6px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    width: calc(100% - 70px); 
+    width: calc(100% - 4.86vw); 
 }
 
 .milestone-date {

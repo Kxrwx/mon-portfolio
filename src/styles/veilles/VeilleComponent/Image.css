@@ -4,7 +4,7 @@
     justify-content: center; 
     align-items: center;
     width: 100%;
-    padding: 30px 0;
+    padding: 2.08vw 0;
 }
 
 .image-container a {
@@ -14,12 +14,12 @@
     align-items: center;
     text-align: center;
     
-    width: clamp(300px, 70%, 500px); 
+    width: clamp(18.75rem, 70%, 31.25rem); 
     text-decoration: none; 
     color: inherit; 
     background: linear-gradient(to right, #f8fafc, #f1f5f9); 
     border-radius: 12px;
-    padding: 20px;
+    padding: 1.25rem;
     
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
     
@@ -29,7 +29,7 @@
 }
 
 .image-container a:hover {
-    transform: translateY(-5px); 
+    transform: translateY(-0.3125rem); 
     box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
 }
 
@@ -37,7 +37,7 @@
     width: 100%; 
     height: auto;
     border-radius: 10px; 
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
     object-fit: cover; 
 }
 
@@ -53,5 +53,5 @@
     font-size: 0.95rem;
     line-height: 1.4;
     margin: 0;
-    padding: 0 10px; 
+    padding: 0 0.625rem; 
 }

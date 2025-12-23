@@ -2,7 +2,7 @@
   width: 80%;
   overflow: hidden;
   position: relative;
-  padding: 30px 0;
+  padding: 2.08vw 0;
   margin: 0 auto;
   border-radius: 20px;
   background: #f8f7fd;
@@ -13,7 +13,7 @@
 .bandeau-scroll {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 4.17vw;
   width: max-content;
   animation: scrollBandeau 40s linear infinite;
 }
@@ -30,21 +30,21 @@
 /* ✅ Rendu responsive sans JS */
 @media (max-width: 1200px) {
   .bandeau-scroll {
-    gap: 40px;
+    gap: 2.78vw;
     animation-duration: 30s;
   }
 }
 
 @media (max-width: 768px) {
   .bandeau-scroll {
-    gap: 25px;
+    gap: 1.74vw;
     animation-duration: 25s;
   }
 }
 
 @media (max-width: 480px) {
   .bandeau-scroll {
-    gap: 20px;
+    gap: 1.39vw;
     animation-duration: 20s;
   }
 }
@@ -77,7 +77,7 @@
 
 .bandeau-icon {
   font-size: 2rem;
-  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
 }
 
 .bandeau-widget h3 {
@@ -88,6 +88,6 @@
 
 .bandeau-widget p {
   font-size: 0.75rem;
-  margin: 4px 0 0;
+  margin: 0.25rem 0 0;
   opacity: 0.85;
 }

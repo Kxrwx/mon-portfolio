@@ -14,14 +14,14 @@
     color: transparent;
     -webkit-background-clip: text; 
     background-clip: text;        
-    font-size: 50px; 
+    font-size: 3.125rem; 
     font-weight: 800;
 }
 .veille-content-main > p {
     width: 80%;
     margin: auto;
-    margin-top: 70px;
-    margin-bottom: 70px;
-    font-size: 18px;
+    margin-top: 4.86vw;
+    margin-bottom: 4.86vw;
+    font-size: 1.125rem;
     line-height: 1.6;
 }

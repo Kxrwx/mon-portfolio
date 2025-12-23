@@ -6,12 +6,12 @@
 }
 
 .container-comp h2 {
-    margin-left: 80px;
+    margin-left: 5.56vw;
 }
 
 
 .widget-container-comp {
-    padding: 40px;
+    padding: 2.78vw;
     display: flex;
     width: 80%;
     justify-self: center;
@@ -21,12 +21,12 @@
     border: #211C39 solid 2px;
     border-radius: 10px;
     background: linear-gradient(to right, #f8fafc, #f1f5f9);
-    margin-bottom: 100px;
+    margin-bottom: 6.94vw;
 }
 
 .widget-container-button-comp {
-    width: 400px;
-    padding: 50px;
+    width: 27.78vw;
+    padding: 3.47vw;
     display: flex;
     justify-self: center;
     justify-content: space-between;
@@ -37,12 +37,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px;
-    padding: 0 10px;
+    width: 7.5rem;
+    padding: 0 0.625rem;
     border-radius: 10px;
     border : 2px solid #5C40D8;
     color: #5C40D8;
-    word-spacing: 3px;
+    word-spacing: 0.1875rem;
     transition: transform 0.3s ease;
     background: linear-gradient(to right, #f8fafc, #f1f5f9);
 }
@@ -51,10 +51,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 10px;
-    width: 120px;
+    padding: 0 0.625rem;
+    width: 7.5rem;
     border-radius: 10px;
-    word-spacing: 3px;
+    word-spacing: 0.1875rem;
     border : 2px solid #6366f1;
     background: linear-gradient(to right, #f8fafc, #f1f5f9);
     transform: scale(1.05);
