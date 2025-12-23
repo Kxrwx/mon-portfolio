@@ -63,3 +63,74 @@
     top: -3.125rem;
     margin-right: 1.25rem;
 }
+
+@media (max-width: 768px) {
+    /* Mobile header: compact, centered, no horizontal overflow */
+    html, body {
+        overflow-x: hidden !important;
+        box-sizing: border-box !important;
+    }
+
+    .header {
+        padding: 0.5rem 1.5rem !important;
+        text-align: center !important;
+        background-color: transparent !important;
+    }
+
+    .container-contact {
+        display: flex !important;
+        flex-direction: row !important;
+        width: calc(100%) !important;
+        max-width: 100% !important;
+        padding: 1rem 2.5rem!important;
+        height: auto !important;
+        background-color: #211C39 !important;
+        box-sizing: border-box !important;
+        overflow: visible !important;
+        position: relative!important;
+        top: 0!important;
+        left: 50%!important;
+        transform: translate(-50%, -64%)!important; 
+        align-items: flex-end;
+        height: 20vh !important;
+        justify-content: space-evenly;    
+        clip-path: polygon(
+    15% 0%,    /* haut-gauche */
+    85% 0%,    /* haut-droit */
+    100% 50%,  /* milieu-droit */
+    85% 100%,  /* bas-droit */
+    15% 100%,  /* bas-gauche */
+    0% 50%     /* milieu-gauche */
+  );
+    }
+
+    .container-contact button {
+        height: 2.5rem !important;
+        width: 2.5rem !important;
+        aspect-ratio: unset !important;
+        transform: none !important;
+        font-size: 1rem !important;
+        padding: 0 !important;
+        margin: 0 0.25rem !important;
+        border-radius: 8px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-sizing: border-box !important;
+    }
+
+    .container-contact button:hover {
+        transform: none !important;
+    }
+
+    .header h1 {
+        position: relative !important;
+        top: 0 !important;
+        margin-right: 0 !important;
+        margin-bottom: 0.25rem !important;
+        font-size: 1.1rem !important;
+        display: block !important;
+        text-align: center !important;
+    }
+
+}

@@ -47,3 +47,63 @@
   color: #1e293b;
   font-size: 0.9rem;
 }
+
+@media (max-width: 768px) {
+  /* Vertical mobile layout: stack year cards, remove horizontal scroll */
+  html, body {
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .calendar-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+    padding: 1rem !important;
+    align-items: stretch !important;
+    overflow-x: hidden !important;
+  }
+
+  .year-card {
+    flex: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    background: linear-gradient(to right, #f8fafc, #f1f5f9) !important;
+    border: 2px solid #211C39 !important;
+    border-radius: 0.8rem !important;
+    padding: 0.9rem !important;
+    text-align: left !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06) !important;
+    transition: none !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .year-card:hover {
+    transform: none !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06) !important;
+    border-color: #211C39 !important;
+  }
+
+  .year-card h2 {
+    color: #4f46e5 !important;
+    margin-bottom: 0.5rem !important;
+    font-size: 1.1rem !important;
+  }
+
+  .year-card ul {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .year-card li {
+    margin: 0.25rem 0 !important;
+    font-weight: 500 !important;
+    padding: 0.65rem 0.5rem !important;
+    color: #1e293b !important;
+    font-size: 1rem !important;
+    background: transparent !important;
+    border-radius: 6px !important;
+  }
+
+}
