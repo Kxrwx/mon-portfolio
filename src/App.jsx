@@ -15,7 +15,7 @@ function App() {
   const [activeComponent, setActiveComponent] = useState('home')
   const [activeSection, setActiveSection] = useState(null)
 
-  const projectId = "yourProjectId"
+  const projectId = "uqajmb2eul"
 
 useEffect(() => {
     // Ce bloc ne s'exécutera qu'une seule fois au chargement initial du composant
