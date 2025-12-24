@@ -7,12 +7,20 @@ import PageMe from './components/PageMe'
 import PageProjet from './components/PageProjet'
 import PageCertif from './components/PageCertif'
 import PageVeille from './components/PageVeille'
+import Clarity from '@microsoft/clarity';
 
 
 
 function App() {
   const [activeComponent, setActiveComponent] = useState('home')
   const [activeSection, setActiveSection] = useState(null)
+
+  const projectId = "yourProjectId"
+
+useEffect(() => {
+    // Ce bloc ne s'exécutera qu'une seule fois au chargement initial du composant
+    Clarity.init(projectId);
+  }, []);
   return (
     <div className="App">
       <Sidebar setActiveComponent={setActiveComponent} setActiveSection={setActiveSection} />
