@@ -17,10 +17,9 @@ function App() {
 
   const projectId = "uqajmb2eul"
 
-useEffect(() => {
-    // Ce bloc ne s'exécutera qu'une seule fois au chargement initial du composant
-    Clarity.init(projectId);
-  }, []);
+
+  Clarity.init(projectId);
+  
   return (
     <div className="App">
       <Sidebar setActiveComponent={setActiveComponent} setActiveSection={setActiveSection} />
