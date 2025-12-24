@@ -2,7 +2,7 @@ import React from "react";
 import "../../styles/veilles/SubjectVeille.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWikipediaW, faGithub} from "@fortawesome/free-brands-svg-icons";
-import { faBrain, faNewspaper, faEarthEurope, faScaleBalanced, faUser, faVial, faFileCircleExclamation, faArrowDownShortWide, faHexagonNodes} from "@fortawesome/free-solid-svg-icons";
+import { faNewspaper, faEarthEurope, faScaleBalanced, faUser, faVial, faFileCircleExclamation, faArrowDownShortWide, faHexagonNodes} from "@fortawesome/free-solid-svg-icons";
 import Introduction from "./VeilleComponent/Introduction";
 import SourceStatic from "./VeilleComponent/SourceStatic";
 import Image from "./VeilleComponent/Image";
@@ -128,7 +128,7 @@ export default function DeepFace() {
 
     return (
         <div className="veille-content-main">
-            <h1 className="veille-content-main-title"><FontAwesomeIcon icon={faBrain}/> IA DeepFace et Reconnaissance d'objet</h1>
+            <h1 className="veille-content-main-title">IA DeepFace et Reconnaissance d'objet</h1>
             <Introduction intro={introData}/>
             <SourceStatic CompoTitle="Source d'introduction" link={linkData1}/>
             <Image ImageURL={ImageData1}/>

@@ -83,9 +83,39 @@
   }
 }
 
-@media (max-width: 500px) {
-  .certif-card {
-    width: 11.25rem;
-      height: 11.25rem;
+/* ========================================================================= */
+/* --- MOBILE RESPONSIVE (VERTICAL, SANS OVERFLOW) --- */
+/* ========================================================================= */
+
+@media (max-width: 768px) {
+  html, body { overflow-x: hidden !important; box-sizing: border-box !important; }
+
+  .certif-grid-container {
+    width: calc(100vw - 1rem) !important;
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+    padding: 0.75rem 0 4rem 0 !important;
+    justify-items: center !important;
+    margin: 0 auto !important;
   }
+
+  .certif-card {
+    width: 80% !important;
+    max-width: 80% !important;
+    height: 10rem;
+    aspect-ratio: auto !important;
+    padding: 0.75rem !important;
+    border-radius: 12px !important;
+  }
+
+  .certif-card:hover { 
+    transform: none !important; 
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1) !important; 
+  }
+
+  .certif-icon { font-size: 1.8rem !important; margin-bottom: 0.4rem !important; }
+  .certif-card h3 { font-size: 0.95rem !important; }
+  .certif-date { font-size: 0.75rem !important; }
+  .certif-desc { font-size: 0.75rem !important; max-width: 100% !important; }
+  .certif-btn { padding: 0.35rem 0.6rem !important; font-size: 0.8rem !important; }
 }

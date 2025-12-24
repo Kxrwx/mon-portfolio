@@ -98,3 +98,69 @@
 .carousel-btn:hover {
   background-color: #6366f1;
 }
+
+@media (max-width: 768px) {
+  /* Mobile: single prominent card, vertical stacking */
+  html, body {
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .carousel-wrapper {
+    width: 100% !important;
+    padding: 1rem 0 !important;
+    margin: 0 auto !important;
+    overflow: visible !important;
+  }
+
+  .carousel {
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: auto !important;
+    perspective: none !important;
+  }
+
+  /* Make the center card full width and hide side cards to avoid crowding */
+  .carousel-card {
+    position: relative !important;
+    top: auto !important;
+    transform: none !important;
+    width: 9rem !important;
+    height: 9rem !important;
+    padding: 1rem 0.1rem;
+    margin: 0.5rem auto !important;
+    opacity: 1 !important;
+    z-index: 3 !important;
+    display: block !important;
+  }
+
+  .carousel-card.card-center {
+    transform: none !important;
+    scale: 1 !important;
+    opacity: 1 !important;
+    z-index: 4 !important;
+  }
+
+  .carousel-card.card-left,
+  .carousel-card.card-right,
+  .carousel-card.card-hidden {
+    display: none !important;
+  }
+
+  .project-icon { font-size: 1.5rem !important; }
+
+  /* Buttons repositioned to bottom corners for easier thumb reach */
+  .carousel-btn {
+    top: auto !important;
+    bottom: 3rem !important;
+    width: 2.75rem !important;
+    height: 2.75rem !important;
+    font-size: 1rem !important;
+  }
+
+  .carousel-btn.left { left: 0.75rem !important; }
+  .carousel-btn.right { right: 0.75rem !important; }
+
+}

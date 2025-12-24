@@ -204,8 +204,10 @@
 
 @media (max-width: 768px) {
     .widget-front {
-        padding: 0.9375rem;
+        padding: 0;
         gap: 0.9375rem;
+        justify-self: center;
+        align-self: center;
     }
     
     .widget-front > div {
@@ -216,4 +218,93 @@
         flex-direction: column;
         gap: 15px;
     }
+
+    /* Images and icons: responsive sizing for mobile */
+    html, body {
+        overflow-x: hidden !important;
+        box-sizing: border-box !important;
+    }
+
+    .widget-front img,
+    .widget-front svg,
+    .builder img.logo-vite,
+    .framework-front img {
+        max-width: 100% !important;
+        height: auto !important;
+        display: block !important;
+        object-fit: contain !important;
+    }
+
+    /* Constrain framework images to a reasonable pixel size on small screens */
+    .framework-front img {
+        width: 56px !important;
+        min-width: 40px !important;
+    }
+
+    /* Vite logo and similar smaller icons */
+    .builder img.logo-vite {
+        width: 48px !important;
+        height: auto !important;
+    }
+
+    /* Reduce SVG icon size inside lists to avoid overflow */
+    .langage-front ul li > svg,
+    .librairy-react ul li > svg {
+        font-size: 1.25rem !important;
+        min-width: 1.5rem !important;
+    }
+
+    /* FontAwesome / SVG icons: force compact sizes on mobile to prevent overflow */
+    .widget-front svg,
+    .widget-front .svg-inline--fa,
+    .widget-front .fa {
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 1.1rem !important;
+        display: inline-block !important;
+        vertical-align: middle !important;
+    }
+
+    /* Slightly smaller icons inside list items */
+    .widget-front li svg,
+    .widget-front li .svg-inline--fa {
+        width: 24px !important;
+        height: 24px !important;
+        font-size: 1rem !important;
+        min-width: 24px !important;
+    }
+
+    /* Fix builder / cms readability on small screens */
+    .builder, .cms {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-height: auto !important;
+        max-height: none !important;
+        padding: 0.875rem 0.75rem !important;
+        box-sizing: border-box !important;
+        text-align: center !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 0.5rem !important;
+    }
+
+    /* Stack the builder inner row vertically to avoid squeezing image+text */
+    .builder > div {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 0.5rem !important;
+        width: 100% !important;
+    }
+
+    .builder p, .cms p {
+        text-align: center !important;
+        margin: 0 !important;
+    }
+
+    .builder h2, .cms h2 {
+        font-size: 1.05rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+
 }

@@ -61,3 +61,75 @@
     transition:  0.3s ease;
     color: #6366f1; 
 }
+
+@media (max-width: 768px) {
+    /* Mobile: center everything and stack vertically */
+    html, body {
+        overflow-x: hidden !important;
+        box-sizing: border-box !important;
+    }
+
+
+
+    .container-comp {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    .container-comp h2 {
+        margin-left: 0 !important;
+        text-align: center !important;
+        font-size: 1.15rem !important;
+        margin-bottom: 0.5rem !important;
+        width: 100% !important;
+    }
+
+    .widget-container-comp {
+        padding: 0.75rem !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 1rem !important;
+        box-sizing: border-box !important;
+    }
+
+    .widget-container-comp * {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .widget-container-button-comp {
+        width: 100% !important;
+        padding: 0.5rem !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+        align-items: center !important;
+    }
+
+    .widget-container-button-comp button {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0.75rem !important;
+        font-size: 1rem !important;
+        border-radius: 8px !important;
+    }
+
+    /* Images or media inside competence should be responsive */
+    .widget-container-comp img, .widget-container-comp svg {
+        max-width: 100% !important;
+        height: auto !important;
+        display: block !important;
+    }
+
+}
