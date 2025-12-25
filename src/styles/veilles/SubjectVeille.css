@@ -55,3 +55,32 @@
     font-weight: 800;
 }
 }
+
+@media (max-width: 350pxpx) {
+    .veille-content-main {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.veille-content-main-title {
+    justify-self: center;
+    align-self: center;
+    margin: 0;
+    padding: 2rem 0;
+    background-image: linear-gradient(
+        90deg,             
+        #818cf8,           
+        #4f46e5 50%,      
+        #3730a3            
+    );
+    color: transparent;
+    -webkit-background-clip: text; 
+    background-clip: text;        
+    font-size: 3.125rem; 
+    font-weight: 800;
+}
+}

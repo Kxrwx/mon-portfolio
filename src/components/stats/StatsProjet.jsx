@@ -7,7 +7,7 @@ const data = [
   { name: 'HTML/CSS', value: 1 },
 ]
 
-const COLORS = ['#4f46e5', '#0ea5e9'] // violet, bleu
+const COLORS = ['#4f46e5', '#0ea5e9'] 
 
 function StatsProjet() {
   return (
@@ -16,6 +16,7 @@ function StatsProjet() {
         <ResponsiveContainer>
           <PieChart>
             <Pie
+            
               data={data}
               cx="50%"
               cy="100%"

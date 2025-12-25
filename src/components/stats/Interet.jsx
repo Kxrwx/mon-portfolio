@@ -24,7 +24,7 @@ export default function Interet() {
     style={{ color: "#333333" }} 
     whileHover={{ scale: 1.1, color: "#6366f1" }} 
 >
-            <FontAwesomeIcon icon={item.icon} style={{ marginRight: "8px" }} />
+            <FontAwesomeIcon icon={item.icon} style={{ marginRight: "0.5rem" }} />
             {item.name}
           </motion.li>
         ))}

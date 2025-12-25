@@ -18,3 +18,33 @@
     margin-left: 5.56vw;
     font-family: 'Montserrat', sans-serif;
 }
+
+@media (max-width: 350px) {
+
+.veille-section {
+  padding: 0 0.625rem;  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.veille-placement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5.56vw;
+  width: 90vw;
+  height: 100%; /* ou min-height selon besoin */
+  box-sizing: border-box;
+}
+
+.veille-section-title {
+    margin-left: 5.56vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+} 
