@@ -5,7 +5,7 @@
 
 .sidebar {
     background-color: #333;
-    height: 31.25vw;
+    height: 50vh;
     transform: translate(-50%, -50%);
     position: fixed;
     padding: 3.47vw 0;
@@ -15,7 +15,7 @@
     flex-direction: column;
     justify-content: center;
     background-color: #211C39;
-    width: 8.33vw;       /* largeur */
+    width: 120px;       /* largeur */
   aspect-ratio: 1.1547; /* hauteur / largeur pour hexagone régulier */
   clip-path: polygon(
     50% 0%,     /* sommet haut */
