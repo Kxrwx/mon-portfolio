@@ -159,26 +159,10 @@
 
 /* --- Media Query (Adaptation Mobile) --- */
 
+/* --- Media Query (Adaptation Mobile) pour Back-End) --- */
+
 @media (max-width: 1200px) {
-    .widget-back {
-        padding: 0.9375rem;
-            gap: 0.9375rem;
-    }
-    
-    /* Toutes les cartes de niveau 1 prennent toute la largeur */
-    .back-langages-container,
-    .back-db-container,
-    .back-framework-container,
-    .back-dblayer-container {
-        flex: 1 1 100%; 
-    }
-
-    /* Mobile-specific improvements: center vertical layout, prevent horizontal scroll, resize icons */
-    html, body {
-        overflow-x: hidden !important;
-        box-sizing: border-box !important;
-    }
-
+    /* Conteneur principal */
     .widget-back {
         display: flex !important;
         flex-direction: column !important;
@@ -186,64 +170,94 @@
         justify-content: flex-start !important;
         width: 100% !important;
         max-width: 100% !important;
-        padding: 0.75rem !important;
+        padding: 0.75rem !important; /* Identique au padding des cartes Front */
         margin: 0 auto !important;
         box-sizing: border-box !important;
+        gap: 0.9375rem; /* Gap : 15px, cohérent avec Front-End */
     }
 
-    .widget-back h1,
+    /* Titres et description */
+    .widget-back h1 {
+        /* font-size: 2rem; -> Réduire la taille du H1 */
+        font-size: 1.6rem !important;
+        margin: 0 0 0.5rem 0 !important; /* Marge réduite */
+    }
+    
     .back-desc {
         width: 100% !important;
         text-align: center !important;
-        margin: 0 0 0.5rem 0 !important;
+        margin: 0 0 0.5rem 0 !important; /* Marge réduite */
     }
 
     .back-desc p {
-        font-size: 0.98rem !important;
+        font-size: 0.95rem !important; /* Légèrement réduit pour cohérence */
         line-height: 1.5 !important;
         padding: 0 0.25rem !important;
         margin-bottom: 0.75rem !important;
     }
 
+    /* Toutes les cartes prennent toute la largeur */
     .back-langages-container,
     .back-db-container,
     .back-framework-container,
-    .back-dblayer-container,
-    .back-db-container {
+    .back-dblayer-container {
+        flex: 1 1 100% !important;
         width: 100% !important;
         max-width: 100% !important;
-        padding: 0.75rem !important;
+        padding: 0.875rem 0.75rem !important; /* Similaire aux cartes Front-End */
         box-sizing: border-box !important;
         text-align: center !important;
         margin: 0 !important;
     }
 
-    /* Make framework internal blocks full width and stacked */
+    /* Titres de carte (h2) */
+    .back-langages-container h2,
+    .back-db-container h2,
+    .back-framework-container h2,
+    .back-dblayer-container h2 {
+        font-size: 1.25rem !important; /* Taille légèrement plus petite que le desktop */
+        margin-bottom: 0.8rem !important; /* Marge réduite */
+    }
+
+    /* Sous-titres (h3) */
+    .back-framework-container h3 {
+        font-size: 1.05rem !important; /* Taille cohérente avec les titres h2 des cartes Front */
+        text-align: left !important; /* Maintenir l'alignement pour les descriptions */
+    }
+
+    /* Paragraphes (p) */
+    .back-framework-container p,
+    .back-dblayer-container p {
+        font-size: 0.95rem !important; /* Cohérent avec la description principale */
+        line-height: 1.4 !important;
+        text-align: left !important;
+        margin: 5px 0 0 0 !important;
+    }
+    
+    /* Structure interne des Frameworks */
+    .back-framework-container {
+        /* Conserve le flex-direction: column du desktop, mais réduit l'écart */
+        gap: 1rem !important; 
+    }
+
     .back-framework-container > div {
+        /* Conteneur pour Next.js et Flask */
+        padding: 0.75rem !important; /* Padding interne réduit */
         width: 100% !important;
-        padding: 0.75rem !important;
         box-sizing: border-box !important;
     }
 
-    /* Disable hover lift on mobile to avoid layout shift */
-    .back-langages-container:hover,
-    .back-db-container:hover,
-    .back-framework-container:hover,
-    .back-dblayer-container:hover {
-        box-shadow: 0 2px 6px rgba(0,0,0,0.06) !important;
-        border-color: #7B61FF !important;
-    }
 
-    /* Lists: ensure icons are compact and text wraps without overflow */
+    /* Listes (Langages & DB) */
     .back-langages-container ul,
     .back-db-container ul {
-        gap: 0.625rem !important;
+        gap: 0.625rem !important; /* Écart réduit pour les listes */
     }
 
     .back-langages-container ul li,
     .back-db-container ul li {
-        font-size: 1rem !important;
-        padding: 0.6rem 0 !important;
+        font-size: 1rem !important; /* Taille de police cohérente */
+        padding: 0.6rem 0 !important; /* Padding vertical réduit */
         gap: 0.6rem !important;
         justify-content: flex-start !important;
         text-align: left !important;
@@ -251,19 +265,20 @@
 
     .back-langages-container ul li > svg,
     .back-db-container ul li > svg {
-        font-size: 1.15rem !important;
+        font-size: 1.15rem !important; /* Icône légèrement plus grande pour la clarté */
         min-width: 24px !important;
         width: 24px !important;
         height: 24px !important;
     }
 
-    /* Force any icons/SVG inside widget-back to be compact */
-    .widget-back svg,
-    .widget-back .svg-inline--fa,
-    .widget-back .fa {
-        width: 26px !important;
-        height: 26px !important;
-        font-size: 1rem !important;
-    }
 
+    /* Désactiver le zoom et l'ombre plus légère pour le mobile */
+    .back-langages-container:hover,
+    .back-db-container:hover,
+    .back-framework-container:hover,
+    .back-dblayer-container:hover {
+        box-shadow: 0 2px 6px rgba(0,0,0,0.06) !important;
+        transform: none !important; /* Désactiver le scale(1.01) */
+        border-color: #7B61FF !important;
+    }
 }
