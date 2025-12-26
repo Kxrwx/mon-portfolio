@@ -6,6 +6,7 @@
 .sidebar {
     background-color: #333;
     height: 50vh;
+    max-height: 550px;
     transform: translate(-50%, -50%);
     position: fixed;
     padding: 3.47vw 0;
@@ -69,6 +70,56 @@
     border: #FFFFFF solid 2px;
     transition: 0.5s ease;
 }
+
+/*
+================================================================================
+MEDIA QUERY SPÉCIFIQUE : ÉCRANS COURTS (Faible hauteur)
+================================================================================
+Ceci s'applique aux écrans d'ordinateur ou aux tablettes/mobiles en paysage
+qui n'ont pas beaucoup d'espace vertical.
+*/
+@media (max-height: 600px) {
+    .container-sidebar {
+    width: 8.33vw;
+    position: absolute;
+}
+    /* Cible le conteneur principal de la sidebar */
+    .sidebar {
+    background-color: #333;
+    height: 70vh;
+    min-height: 370px;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    padding: 3.47vw 0;
+    top: 50%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #211C39;
+    width: 120px;       /* largeur */
+  aspect-ratio: 1.1547; /* hauteur / largeur pour hexagone régulier */
+  clip-path: polygon(
+    50% 0%,     /* sommet haut */
+    100% 15%,  /* haut-droit */
+    100% 85%,  /* bas-droit */
+    50% 100%,   /* sommet bas */
+    50% 0%,   /* bas-gauche */
+    0% 50%    /* haut-gauche */
+  );
+}
+    
+    /* Réduire l'espace entre les éléments si la hauteur est le problème */
+    .space {
+        height: 1.5rem !important; /* Réduit l'espace vertical */
+    }
+
+    /* Réduire le padding des liens de navigation */
+    .nav-links li {
+        padding: 0.8rem 0 !important; /* Réduit le padding vertical des liens */
+    }
+}
+
 
 @media (max-width: 768px) {
     /* Sidebar becomes a bottom fixed navigation bar */
