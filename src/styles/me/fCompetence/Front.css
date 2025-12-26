@@ -15,6 +15,28 @@
     text-align: center;
     margin-bottom: 0.625rem;
 }
+
+.widget-front h1,
+.front-desc {
+    width: 100%;
+}
+
+.widget-front h1 {
+    text-align: center;
+    margin-bottom: 0.625rem;
+    font-size: 2rem;
+    color: #000;
+}
+.front-desc {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+.front-desc p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
 .widget-front > div:not(.builder-cms, .title-front) {
     flex: 1 1 20.83vw;
     text-align: center;
