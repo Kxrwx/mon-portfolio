@@ -5,6 +5,7 @@
 .project-content-main h1 {
     margin-left: 5.56vw;
     margin-bottom: 3.47vw;
+    font-size: 2rem
 }
 .project-content-main > p {
     width: 80%;
@@ -23,7 +24,7 @@
         margin-bottom: 0.75rem !important;
         text-align: center !important;
         padding: 0 0.75rem !important;
-        font-size: 1.25rem !important;
+        font-size: 2rem !important;
     }
     .project-content-main > p {
         width: 100% !important;
