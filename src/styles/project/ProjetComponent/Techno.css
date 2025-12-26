@@ -46,7 +46,8 @@
     font-size: 1.25rem;
 }
 
-@media (max-width: 1200px) {
+
+@media (max-width: 768px) {
     html, body { overflow-x: hidden !important; box-sizing: border-box !important; }
 
     .techno-container {
