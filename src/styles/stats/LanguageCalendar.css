@@ -4,7 +4,8 @@
   gap: 10px;                   /* espace entre les cartes */
   padding: 2rem;
   font-family: 'Montserrat', sans-serif;
-  overflow-x: auto;            /* scroll horizontal si trop large */
+  overflow-x: auto;  
+  width: 100%;          /* scroll horizontal si trop large */
 }
 
 /* Chaque carte */
