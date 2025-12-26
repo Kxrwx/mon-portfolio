@@ -89,7 +89,16 @@
 
 @media (max-width: 1200px) {
     .widget-reseau {
-        padding: 0.9375rem;
+        padding: 0;
         gap: 0.9375rem;
+        justify-self: center;
+        align-self: center;
     }
+
+    .widget-reseau h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.625rem;
+}
+
 }

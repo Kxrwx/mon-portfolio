@@ -164,37 +164,13 @@
 @media (max-width: 1200px) {
     /* Conteneur principal */
     .widget-back {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: flex-start !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        padding: 0.75rem !important; /* Identique au padding des cartes Front */
-        margin: 0 auto !important;
-        box-sizing: border-box !important;
-        gap: 0.9375rem; /* Gap : 15px, cohérent avec Front-End */
+        padding: 0;
+        gap: 0.9375rem;
+        justify-self: center;
+        align-self: center;
     }
 
-    /* Titres et description */
-    .widget-back h1 {
-        /* font-size: 2rem; -> Réduire la taille du H1 */
-        font-size: 1.6rem !important;
-        margin: 0 0 0.5rem 0 !important; /* Marge réduite */
-    }
-    
-    .back-desc {
-        width: 100% !important;
-        text-align: center !important;
-        margin: 0 0 0.5rem 0 !important; /* Marge réduite */
-    }
 
-    .back-desc p {
-        font-size: 0.95rem !important; /* Légèrement réduit pour cohérence */
-        line-height: 1.5 !important;
-        padding: 0 0.25rem !important;
-        margin-bottom: 0.75rem !important;
-    }
 
     /* Toutes les cartes prennent toute la largeur */
     .back-langages-container,
@@ -215,7 +191,7 @@
     .back-db-container h2,
     .back-framework-container h2,
     .back-dblayer-container h2 {
-        font-size: 1.25rem !important; /* Taille légèrement plus petite que le desktop */
+        font-size: 1.15rem !important; /* Taille légèrement plus petite que le desktop */
         margin-bottom: 0.8rem !important; /* Marge réduite */
     }
 
@@ -225,14 +201,7 @@
         text-align: left !important; /* Maintenir l'alignement pour les descriptions */
     }
 
-    /* Paragraphes (p) */
-    .back-framework-container p,
-    .back-dblayer-container p {
-        font-size: 0.95rem !important; /* Cohérent avec la description principale */
-        line-height: 1.4 !important;
-        text-align: left !important;
-        margin: 5px 0 0 0 !important;
-    }
+
     
     /* Structure interne des Frameworks */
     .back-framework-container {
