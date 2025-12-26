@@ -202,7 +202,7 @@
 
 /* --- Media Query (Adaptation Mobile) --- */
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .widget-front {
         padding: 0;
         gap: 0.9375rem;

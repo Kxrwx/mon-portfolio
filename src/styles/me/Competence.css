@@ -62,7 +62,7 @@
     color: #6366f1; 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     /* Mobile: center everything and stack vertically */
     html, body {
         overflow-x: hidden !important;
@@ -119,7 +119,7 @@
 
     .widget-container-button-comp button {
         width: 100% !important;
-        max-width: 100% !important;
+        max-width: 280px !important;
         padding: 0.75rem !important;
         font-size: 1rem !important;
         border-radius: 8px !important;

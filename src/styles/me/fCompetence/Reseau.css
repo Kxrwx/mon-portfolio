@@ -87,7 +87,7 @@
 
 /* --- Media Query (Adaptation Mobile) --- */
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .widget-reseau {
         padding: 0.9375rem;
         gap: 0.9375rem;
