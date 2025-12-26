@@ -49,7 +49,7 @@
   font-size: 0.9rem;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1600px) {
   /* Vertical mobile layout: stack year cards, remove horizontal scroll */
   html, body {
     overflow-x: hidden !important;
