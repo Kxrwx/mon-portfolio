@@ -87,7 +87,7 @@
     margin: 5px 0 0 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     html, body { overflow-x: hidden !important; box-sizing: border-box !important; }
 
     .timeline-vertical-container {

@@ -15,7 +15,7 @@
     border-radius: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     html, body { overflow-x: hidden !important; box-sizing: border-box !important; }
     .container-texte { padding: 2rem 0 !important; }
     .container-texte > div {
