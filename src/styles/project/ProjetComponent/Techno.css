@@ -46,7 +46,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1600px) {
     html, body { overflow-x: hidden !important; box-sizing: border-box !important; }
 
     .techno-container {
