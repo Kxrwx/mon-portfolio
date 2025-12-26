@@ -161,7 +161,7 @@
 
 /* --- Media Query (Adaptation Mobile) pour Back-End) --- */
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
     /* Conteneur principal */
     .widget-back {
         padding: 0;
