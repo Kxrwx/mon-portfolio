@@ -211,6 +211,33 @@
     box-sizing: border-box;
 }
 
+.container-skills {
+  display: flex;
+  flex: 1 1;
+  min-width: clamp(490px, 28vw, 650px);
+  height: clamp(370px, 25vh, 420px);
+  flex-direction: column;
+  border: #211C39 solid 2px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #f8fafc, #f1f5f9);
+  transition: ease-in-out 0.3s;
+  max-width: 52.08vw;
+}
+
+.container-skills:hover {
+  flex: 1 1;
+  flex-direction: column;
+  min-width: clamp(490px, 28vw, 650px);
+  height: clamp(370px, 25vh, 420px);
+  border: #5C40D8 solid 2px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #f8fafc, #f1f5f9);
+  transition: ease-in-out 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.01);
+}
+    
+
 }
 
 

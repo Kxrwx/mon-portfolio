@@ -99,7 +99,7 @@
   background-color: #6366f1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   /* Mobile: single prominent card, vertical stacking */
   html, body {
     overflow-x: hidden !important;
