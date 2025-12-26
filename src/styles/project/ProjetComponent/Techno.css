@@ -48,7 +48,8 @@
 @media (max-width: 1600px) {
 .techno-container {
     display: flex;
-    width: 100%;
+    width: 93%;
+    margin: 0 5%;
     border: #4f46e5 solid 2px; 
     background: linear-gradient(to right, #f8fafc, #f1f5f9);
     border-radius: 10px;
