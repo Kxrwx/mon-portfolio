@@ -62,7 +62,7 @@
     color: #6366f1; 
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1700px) {
     /* Mobile: center everything and stack vertically */
     html, body {
         overflow-x: hidden !important;

@@ -210,9 +210,6 @@
         align-self: center;
     }
     
-    .widget-front > div {
-        flex: 1 1 100%; 
-    }
 
     .builder-cms {
         flex-direction: column;
