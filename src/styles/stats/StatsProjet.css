@@ -3,11 +3,12 @@
   height: 250px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  margin-top: 2rem;
 }
 
 .chart-wrapper {
   width: 100%;
-  height: 120px;
+  height: 130px;
 }
 
 .legend-wrapper {
@@ -16,6 +17,7 @@
   gap: 0.5rem;
   margin-top: 0.5rem;
   flex-wrap: wrap;
+
 }
 
 .legend-item {
@@ -39,6 +41,35 @@
   font-weight: 700;
   color: #4f46e5; /* violet principal */
 }
+
+@media (max-width: 900px) {
+  /* Mobile: ensure no horizontal scroll and stack elements vertically */
+  html, body {
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .stats-container {
+  width: auto;
+  height: 200px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  }
+
+  .chart-wrapper {
+    width: 100% !important;
+    height: 130px !important;
+    max-width: 100% !important;
+  }
+
+  /* Make any graphic elements responsive */
+  .chart-wrapper img, .chart-wrapper svg, .chart-wrapper canvas {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+}
+
 
 @media (max-width: 768px) {
   /* Mobile: ensure no horizontal scroll and stack elements vertically */

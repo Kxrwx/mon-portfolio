@@ -1,52 +1,15 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faReact,
-  faNodeJs,
-  faPython,
-  faDocker,
-  faJs,
-  faFigma,
-} from "@fortawesome/free-brands-svg-icons";
+import { faShield} from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 import "../../styles/certifs/CertifGrid.css";
 
 const certifs = [
   {
-    name: "React",
-    icon: faReact,
-    date: "2023-05",
-    desc: "Certification en React : développement d’interfaces modernes et réactives.",
-  },
-  {
-    name: "Node.js",
-    icon: faNodeJs,
-    date: "2023-08",
-    desc: "Certification en Node.js : création d’APIs et gestion de serveurs backend.",
-  },
-  {
-    name: "Python",
-    icon: faPython,
-    date: "2024-01",
-    desc: "Certification Python : automatisation, scripts et développement web.",
-  },
-  {
-    name: "Docker",
-    icon: faDocker,
-    date: "2024-05",
-    desc: "Certification Docker : conteneurisation et déploiement d’applications.",
-  },
-  {
-    name: "TypeScript",
-    icon: faJs,
-    date: "2024-07",
-    desc: "Certification TypeScript : typage fort et meilleures pratiques JS modernes.",
-  },
-  {
-    name: "Figma",
-    icon: faFigma,
-    date: "2024-09",
-    desc: "Certification Figma : conception d’interfaces UI/UX performantes.",
+    name: "ANSI",
+    icon: faShield,
+    date: "2024-11",
+    desc: "Certication de base du MOOC",
   },
 ];
 
