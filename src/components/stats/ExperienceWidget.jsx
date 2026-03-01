@@ -12,17 +12,16 @@ const experiences = [
     desc: "Création d’applications métiers PowerApps et d’un intranet SharePoint avec automatisations PowerAutomate.",
   },
   {
-    title: "Mon stage 2026 ",
-    company: "None",
+    title: "Stage Développeur PowerPlatform",
+    company: "FehrGroup ",
     date: "Janvier - Fevrier 2026",
-    desc: "En attente de description.",
+    desc: "Correction de bug et ajout de fonctionnalités sur les applications PowerApps existantes, et création d'automatisations PowerAutomate.",
   },
 ];
 
 const ExperienceWidget = () => {
   const [index, setIndex] = useState(0);
 
-  // Navigation manuelle uniquement
   const next = () => setIndex((prev) => (prev + 1) % experiences.length);
   const prev = () => setIndex((prev) => (prev - 1 + experiences.length) % experiences.length);
 

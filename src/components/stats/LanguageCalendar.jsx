@@ -27,7 +27,7 @@ const data = {
     { icon: faNodeJs, name: "Next.js" },
   ],
   2026: [
-    { icon: faCode, name: "Vue.js" },
+    { icon: faCode, name: "Angular" },
   ],
 };
 

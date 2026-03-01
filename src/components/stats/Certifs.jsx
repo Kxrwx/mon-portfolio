@@ -8,9 +8,7 @@ const data = [
 
 const certifsDetail = {
   Certifs: [
-    { nom: 'React', date: '2023-05' },
-    { nom: 'Node.js', date: '2023-08' },
-    { nom: 'TypeScript', date: '2024-01' }
+    { nom: 'ANSI', date: '2024-11' }
   ]
 }
 

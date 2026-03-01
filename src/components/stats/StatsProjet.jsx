@@ -3,11 +3,12 @@ import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts'
 import '../../styles/stats/StatsProjet.css'
 
 const data = [
-  { name: 'App Web React', value: 2 },
+  { name: 'App Web React', value: 3 },
   { name: 'HTML/CSS', value: 1 },
+  {name: 'Api Flask', value: 1}
 ]
 
-const COLORS = ['#4f46e5', '#0ea5e9'] 
+const COLORS = ['#4f46e5', '#0ea5e9', '#8b5cf6'] 
 
 function StatsProjet() {
   return (
